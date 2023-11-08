@@ -67,7 +67,7 @@ public class getData : MonoBehaviour
                 Debug.Log(data);
 
 
-                Pokemon myData = JsonUtility.FromJson<Pokemon>(data);
+                PokemonJoshua myData = JsonUtility.FromJson<PokemonJoshua>(data);
                 if (pokemonNameText != null)
                 {
                     pokemonNameText.text = myData.nom; ;
