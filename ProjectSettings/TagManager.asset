@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - SolidObjects
+  - LongGrass
   - 
   - 
   - 
@@ -41,9 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Bakcground
-    uniqueID: 666634021
+  - name: Background
+    uniqueID: 3411688053
+    locked: 0
+  - name: Foreground
+    uniqueID: 173565801
     locked: 0
   - name: Player
-    uniqueID: 4272209465
+    uniqueID: 3872254281
     locked: 0
