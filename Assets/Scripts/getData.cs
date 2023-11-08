@@ -97,7 +97,7 @@ public class getData : MonoBehaviour
                         Texture2D texture = DownloadHandlerTexture.GetContent(wwwImage);
                         pokemonIMG.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
                     }
-                    if (myData.attaques.Count <= 1 || myData.attaques[0].nom != null)
+                    if (myData.attaques.Count <= 1 || myData.attaques[0].nom == null)
                     {
                         pokemonAttaque1.text = "";
 
@@ -106,7 +106,7 @@ public class getData : MonoBehaviour
                     {
                         pokemonAttaque1.text = myData.attaques[0].nom;
                     }
-                    if (myData.attaques.Count <= 1 || myData.attaques[1].nom != null)
+                    if (myData.attaques.Count <= 1 || myData.attaques[1].nom == null)
                     {
                         pokemonAttaque2.text = "";
 
@@ -115,7 +115,7 @@ public class getData : MonoBehaviour
                     {
                         pokemonAttaque2.text = myData.attaques[1].nom;
                     }
-                    if (myData.attaques.Count <= 2 || myData.attaques[2].nom != null)
+                    if (myData.attaques.Count <= 2 || myData.attaques[2].nom == null)
                     {
                         pokemonAttaque3.text = "";
 
