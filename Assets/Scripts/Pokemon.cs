@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 [System.Serializable]
-public class Pokemon
+public class PokemonJoshua
 {
     public int id;
     public string nom;
