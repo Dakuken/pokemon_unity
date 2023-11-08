@@ -1,0 +1,341 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.10f1 (ff3792e53c62) revision 16725906'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'fr' Physical Memory: 32599 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.10f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+C:/Users/engel/Desktop/pokemon_unity
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+61309
+Successfully changed project path to: C:/Users/engel/Desktop/pokemon_unity
+C:/Users/engel/Desktop/pokemon_unity
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [47944] Host "[IP] 192.168.4.48 [Port] 0 [Flags] 2 [Guid] 2202585566 [EditorId] 2202585566 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-K99SL8O) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [47944] Host "[IP] 192.168.4.48 [Port] 0 [Flags] 2 [Guid] 2202585566 [EditorId] 2202585566 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-K99SL8O) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 23 workers.
+Refreshing native plugins compatible for Editor in 12.30 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.10f1 (ff3792e53c62)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/engel/Desktop/pokemon_unity/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 6950 XT (ID=0x73a5)
+    Vendor:   ATI
+    VRAM:     16337 MB
+    Driver:   31.0.22017.3004
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56812
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.013654 seconds.
+- Loaded All Assemblies, in  0.319 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.218 seconds
+Domain Reload Profiling: 535ms
+	BeginReloadAssembly (98ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (118ms)
+		LoadAssemblies (96ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (116ms)
+			TypeCache.Refresh (115ms)
+				TypeCache.ScanAssembly (103ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (218ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (168ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (110ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.596 seconds
+Refreshing native plugins compatible for Editor in 6.11 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.533 seconds
+Domain Reload Profiling: 1124ms
+	BeginReloadAssembly (129ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (384ms)
+		LoadAssemblies (311ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (148ms)
+			TypeCache.Refresh (124ms)
+				TypeCache.ScanAssembly (109ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (533ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (392ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (66ms)
+			ProcessInitializeOnLoadAttributes (273ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 6.90 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4030 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 71 unused Assets / (244.9 KB). Loaded Objects now: 4490.
+Memory consumption went from 137.9 MB to 137.7 MB.
+Total: 2.941100 ms (FindLiveObjects: 0.259400 ms CreateObjectMapping: 0.089200 ms MarkObjects: 2.397800 ms  DeleteObjects: 0.194200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:scripting/monoscript/fileName/ConditionDB.cs: c60006868091d6b660bd4a51710b04c2 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 711284.871129 seconds.
+  path: Assets/Art/Pokemons/Back/1.png
+  artifactKey: Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Back/1.png using Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd77cb8282a9df1ace66b54d83486a774') in 0.049575 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 29.839418 seconds.
+  path: Assets/Art/Pokemons/Back/1.png
+  artifactKey: Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Back/1.png using Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '927d83d96694c7b7d90ba3f6a9adf48b') in 0.045871 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 15.380805 seconds.
+  path: Assets/Art/Pokemons/Back/1.png
+  artifactKey: Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Back/1.png using Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbfe7754bd5d63f88ee00c706a983338') in 0.017796 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.420961 seconds.
+  path: Assets/Art/Pokemons/Back/1.png
+  artifactKey: Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Back/1.png using Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba7e3fd772ddf36813ad7ea86951a790') in 0.013284 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.654574 seconds.
+  path: Assets/Art/Pokemons/Back/1.png
+  artifactKey: Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Back/1.png using Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4589acbe4c518e23bd9f7a5d3fcfeee6') in 0.013383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 70.832406 seconds.
+  path: Assets/Art/Pokemons/Back/1.png
+  artifactKey: Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Back/1.png using Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d87a193963e8e9406bec7dec2e4d6d7') in 0.013298 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.711736 seconds.
+  path: Assets/Art/Pokemons/Back/1.png
+  artifactKey: Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Back/1.png using Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf3a6021a87e1d2e1b89d53282a3360c') in 0.013395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 17.948632 seconds.
+  path: Assets/Art/Pokemons/Back/1.png
+  artifactKey: Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Back/1.png using Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fdb6aee35ae0ecb7ba8c682ec89c724') in 0.017781 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 26.853311 seconds.
+  path: Assets/Art/Pokemons/Back/1.png
+  artifactKey: Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Back/1.png using Guid(aacaae602a38f884ab9e02e43de3736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4139f5f3e2ccf7ae37ed68dad7c06d5a') in 0.013212 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 44.050660 seconds.
+  path: Assets/Art/Pokemons/Front/1.png
+  artifactKey: Guid(0f37bf3cf5680a64d863b5f155b2a597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Front/1.png using Guid(0f37bf3cf5680a64d863b5f155b2a597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3284b0412d8638f4d2bb5fdf22f59e37') in 0.023331 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002505 seconds.
+  path: Assets/Art/Pokemons/Front/4.png
+  artifactKey: Guid(cd259d9d4f8ba2749a16d1cc64d46bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Front/4.png using Guid(cd259d9d4f8ba2749a16d1cc64d46bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '553df3ea22e7803267587dbe98a6db68') in 0.022028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Pokemons/Front/6.png
+  artifactKey: Guid(d819d29c71518d340b52028b17af51c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Front/6.png using Guid(d819d29c71518d340b52028b17af51c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbea43cbd28c6e97d894309768fcf966') in 0.020232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Pokemons/Front/3.png
+  artifactKey: Guid(843823c80be1fe244945120519a22e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Front/3.png using Guid(843823c80be1fe244945120519a22e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96955cedb03794c56db2ed9c7b91d9a7') in 0.019175 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Pokemons/Front/8.png
+  artifactKey: Guid(9b0e6fc5f36b9ec4197e23d680b3707a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Front/8.png using Guid(9b0e6fc5f36b9ec4197e23d680b3707a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5101fb7262bd7734c8e4a963e7c52b2d') in 0.018997 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Pokemons/Front/5.png
+  artifactKey: Guid(7b639ec515c410e4ebf517fc3899e3bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Front/5.png using Guid(7b639ec515c410e4ebf517fc3899e3bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4edc7bcb26228c9f19554295558b364') in 0.017790 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Art/Pokemons/Front/9.png
+  artifactKey: Guid(163cdf30ffc80c34d918ea83ab5e762f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Front/9.png using Guid(163cdf30ffc80c34d918ea83ab5e762f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6c1cfea33f1aad701440b781d1ff775') in 0.017567 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 19.575149 seconds.
+  path: Assets/Art/Pokemons/Front/2.png
+  artifactKey: Guid(179bd38ab997c7440844309bc52e708a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Front/2.png using Guid(179bd38ab997c7440844309bc52e708a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c497c4caba315688ab776816bf7ecd0') in 0.016108 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Art/Pokemons/Front/6.png
+  artifactKey: Guid(d819d29c71518d340b52028b17af51c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Front/6.png using Guid(d819d29c71518d340b52028b17af51c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa0d2d04b313e4b3e17face42c8041d5') in 0.022556 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Pokemons/Front/9.png
+  artifactKey: Guid(163cdf30ffc80c34d918ea83ab5e762f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pokemons/Front/9.png using Guid(163cdf30ffc80c34d918ea83ab5e762f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d75ff2348fcf82a8c8719c85aa7211b') in 0.014003 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
