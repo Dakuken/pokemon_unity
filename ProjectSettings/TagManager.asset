@@ -11,10 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - BackGround
+  - LongGrass
+  - SolidObject
+  - Playeur
   - 
   - 
   - 
@@ -40,4 +40,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 3959293805
+    locked: 0
+  - name: SolidObject
+    uniqueID: 2603720199
+    locked: 0
+  - name: LongGrass
+    uniqueID: 3991425315
+    locked: 0
+  - name: Playeur
+    uniqueID: 1204691609
     locked: 0
