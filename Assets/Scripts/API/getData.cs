@@ -19,39 +19,40 @@ public class RandomNumberSelector
 }
 public class getData : MonoBehaviour
 {
+
+    public List<PokemonJoshua> pokemonList = new List<PokemonJoshua>();
+    
     public Text pokemonNameText;
-    public Text pokemonIdText;
-
-    public Text pokemonType1;
-
     public Image pokemonIMG;
-
     public Text pokemonAttaque1;
     public Text pokemonAttaque2;
     public Text pokemonAttaque3;
     public Text pokemonAttaque4;
     private string URL = "https://pokemon-api-justinburnel.replit.app/Pokedex/";
-    //private int IndexPokemon = 1;
+    private int IndexPokemon = 4;
 
-    private string pokemonName;
+    // private string pokemonName;
 
 
 
     private string GetURL()
     {
-        int randomIndex = RandomNumberSelector.ChooseRandomNumber();
-        return URL + randomIndex.ToString();
+        // int randomIndex = RandomNumberSelector.ChooseRandomNumber();
+        // return URL + randomIndex.ToString();
+        return URL + IndexPokemon.ToString();
+        // return URL;
     }
 
-    public void GetDataFromButton()
+     private void Start()
     {
         URL = GetURL();
         StartCoroutine(GetDataFromAPI());
     }
 
-
+    
     IEnumerator GetDataFromAPI()
     {
+        
         using (UnityWebRequest www = UnityWebRequest.Get(URL))
         {
             yield return www.SendWebRequest();
@@ -64,28 +65,20 @@ public class getData : MonoBehaviour
             {
 
                 string data = www.downloadHandler.text;
-                Debug.Log(data);
-
+                //Debug.Log(data);
+                ;
 
                 PokemonJoshua myData = JsonUtility.FromJson<PokemonJoshua>(data);
+                pokemonList.Add(myData);
+                Debug.Log(pokemonList[0].nom);
+                pokemonList[0].nom = "test";
+                Debug.Log(pokemonList[0].nom);
                 if (pokemonNameText != null)
                 {
-                    pokemonNameText.text = myData.nom; ;
-                    pokemonIdText.text = myData.id.ToString();
-                    pokemonType1.text = myData.type1;
-                    if (pokemonType1.text == "feu")
-                    {
-                        pokemonType1.color = Color.red;
-                    }
-                    else if (pokemonType1.text == "plante")
-                    {
-                        pokemonType1.color = Color.green;
-                    }
-                    else if (pokemonType1.text == "eau")
-                    {
-                        pokemonType1.color = Color.blue;
-                    }
-                    UnityWebRequest wwwImage = UnityWebRequestTexture.GetTexture(myData.image);
+                    pokemonNameText.text = pokemonList[0].nom;
+                    Debug.Log(pokemonNameText.text);
+        
+                    UnityWebRequest wwwImage = UnityWebRequestTexture.GetTexture(pokemonList[0].image);
                     yield return wwwImage.SendWebRequest();
 
                     if (wwwImage.result != UnityWebRequest.Result.Success)
@@ -132,7 +125,7 @@ public class getData : MonoBehaviour
                     {
                         pokemonAttaque4.text = myData.attaques[3].nom;
                     }
-                    Debug.Log(myData.attaques[1].nom);
+                    //Debug.Log(myData.attaques[1].nom);
 
                 }
 
