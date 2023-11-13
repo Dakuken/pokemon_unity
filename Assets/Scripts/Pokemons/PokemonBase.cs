@@ -124,6 +124,8 @@ public enum Stat
     SpAttack,
     SpDefense,
     Speed,
+    Accuracy,
+    Evasion
 }
 
 public class TypeChart
