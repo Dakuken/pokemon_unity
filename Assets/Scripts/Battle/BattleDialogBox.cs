@@ -21,12 +21,12 @@ public class BattleDialogBox : MonoBehaviour
     [SerializeField] Text ppText;
     [SerializeField] Text typeText;
 
-    public void SetDialog(String dialog)
+    public void SetDialog(string dialog)
     {
         dialogText.text = dialog;
     }
     
-    public IEnumerator TypeDialog(String dialog)
+    public IEnumerator TypeDialog(string dialog)
     {
         dialogText.text = "";
         foreach (var letter in dialog.ToCharArray())
