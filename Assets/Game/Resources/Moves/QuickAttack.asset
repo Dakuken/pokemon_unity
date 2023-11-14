@@ -10,24 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d8e80f754896154da4ecf81d9a19703, type: 3}
-  m_Name: Ember
+  m_Name: QuickAttack
   m_EditorClassIdentifier: 
-  name: Ember
+  name: Vine whip
   description: 
-  type: 2
-  power: 40
+  type: 5
+  power: 45
   accuracy: 100
-  alwaysHits: 0
   pp: 25
-  category: 1
-  effects:
-    boosts: []
-    status: 0
-    volatileStatus: 0
-  _secondaries:
-  - boosts: []
-    status: 2
-    volatileStatus: 0
-    chance: 10
-    target: 0
-  target: 0
