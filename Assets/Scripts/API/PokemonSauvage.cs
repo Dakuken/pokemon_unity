@@ -63,9 +63,10 @@ public class PokemonSauvage : MonoBehaviour
                 if (pokemonNameText != null)
                 {
                     pokemonNameText.text = myData.nom; ;
-                   
+
                     UnityWebRequest wwwImage = UnityWebRequestTexture.GetTexture(myData.image);
                     yield return wwwImage.SendWebRequest();
+                    Debug.Log(myData.image);
 
                     if (wwwImage.result != UnityWebRequest.Result.Success)
                     {

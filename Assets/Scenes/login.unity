@@ -654,7 +654,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1658067354}
+      - m_Target: {fileID: 1658067356}
         m_TargetAssemblyTypeName: NewBehaviourScript, Assembly-CSharp
         m_MethodName: OnSubmitLogin
         m_Mode: 1
@@ -2158,6 +2158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1658067355}
   - component: {fileID: 1658067354}
+  - component: {fileID: 1658067356}
   m_Layer: 0
   m_Name: LoginManager
   m_TagString: Untagged
@@ -2177,9 +2178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77123f40ae087684384faf9ed99f54ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  usernameInputField: {fileID: 994966178}
-  passwordInputField: {fileID: 405531144}
-  errorText: {fileID: 881913070}
 --- !u!4 &1658067355
 Transform:
   m_ObjectHideFlags: 0
@@ -2195,6 +2193,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1658067356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658067353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa0b55e5f5ec4a04caeadd72f63c1288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usernameInputField: {fileID: 994966178}
+  passwordInputField: {fileID: 405531144}
+  errorText: {fileID: 881913070}
 --- !u!1 &1714467219
 GameObject:
   m_ObjectHideFlags: 0

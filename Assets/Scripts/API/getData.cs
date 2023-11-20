@@ -21,7 +21,7 @@ public class getData : MonoBehaviour
 {
 
     public List<PokemonJoshua> pokemonList = new List<PokemonJoshua>();
-    
+
     public Text pokemonNameText;
     public Image pokemonIMG;
     public Text pokemonAttaque1;
@@ -43,16 +43,16 @@ public class getData : MonoBehaviour
         // return URL;
     }
 
-     private void Start()
+    private void Start()
     {
         URL = GetURL();
         StartCoroutine(GetDataFromAPI());
     }
 
-    
+
     IEnumerator GetDataFromAPI()
     {
-        
+
         using (UnityWebRequest www = UnityWebRequest.Get(URL))
         {
             yield return www.SendWebRequest();
@@ -73,11 +73,12 @@ public class getData : MonoBehaviour
                 Debug.Log(pokemonList[0].nom);
                 pokemonList[0].nom = "test";
                 Debug.Log(pokemonList[0].nom);
+                Debug.Log(pokemonList[0].image);
                 if (pokemonNameText != null)
                 {
                     pokemonNameText.text = pokemonList[0].nom;
                     Debug.Log(pokemonNameText.text);
-        
+
                     UnityWebRequest wwwImage = UnityWebRequestTexture.GetTexture(pokemonList[0].image);
                     yield return wwwImage.SendWebRequest();
 
