@@ -11,11 +11,11 @@ TagManager:
   - 
   - Water
   - UI
-  - BackGround
+  - SolidObjects
   - LongGrass
-  - SolidObject
-  - Playeur
-  - 
+  - Interactable
+  - Player
+  - FovLayer
   - 
   - 
   - 
@@ -41,15 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: BackGround
+  - name: Background
     uniqueID: 3959293805
     locked: 0
-  - name: SolidObject
+  - name: Foreground
     uniqueID: 2603720199
     locked: 0
   - name: LongGrass
     uniqueID: 3991425315
     locked: 0
-  - name: Playeur
+  - name: Player
     uniqueID: 1204691609
     locked: 0

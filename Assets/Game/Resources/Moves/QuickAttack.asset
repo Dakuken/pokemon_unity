@@ -12,9 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d8e80f754896154da4ecf81d9a19703, type: 3}
   m_Name: QuickAttack
   m_EditorClassIdentifier: 
-  name: Vine whip
+  name: Quick Attack
   description: 
-  type: 5
-  power: 45
+  type: 1
+  power: 40
   accuracy: 100
-  pp: 25
+  alwaysHits: 0
+  pp: 30
+  priority: 1
+  category: 0
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  _secondaries: []
+  target: 0
