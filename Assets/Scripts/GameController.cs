@@ -12,9 +12,12 @@ public class GameController : MonoBehaviour
    [SerializeField] Camera worldCamera;
    
    GameState state;
+   
+   public static GameController Instance { get; private set; }
 
    private void Awake()
    {
+      Instance = this;
       ConditionsDB.Init();
    }
 
@@ -51,10 +54,34 @@ public class GameController : MonoBehaviour
       var playerParty = playerController.GetComponent<PokemonParty>();
       var wildPokemon = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomWildPokemon();
       
-      battleSystem.StartBattle(playerParty, wildPokemon);
+      var wildPokemonCopy = new Pokemon(wildPokemon.Base, wildPokemon.Level);
+      
+      battleSystem.StartBattle(playerParty, wildPokemonCopy);
+   }
+   
+   TrainerController trainer;
+   
+   public void StartTrainerBattle(TrainerController trainer){
+      
+      state = GameState.Battle;
+      battleSystem.gameObject.SetActive(true);
+      worldCamera.gameObject.SetActive(false);
+      
+      this.trainer = trainer;
+      var playerParty = playerController.GetComponent<PokemonParty>();
+      var trainerParty = trainer.GetComponent<PokemonParty>();
+      
+      battleSystem.StartTrainerBattle(playerParty, trainerParty);
    }
    
    void EndBattle(bool won){
+
+      if (trainer != null && won)
+      {
+         trainer.BattleLost();
+         trainer = null;
+      }
+      
       state = GameState.FreeRoam;
       battleSystem.gameObject.SetActive(false);
       worldCamera.gameObject.SetActive(true);

@@ -47,9 +47,9 @@ TagManager:
   - name: Foreground
     uniqueID: 2603720199
     locked: 0
-  - name: LongGrass
-    uniqueID: 3991425315
-    locked: 0
   - name: Player
     uniqueID: 1204691609
+    locked: 0
+  - name: Battle
+    uniqueID: 2147987681
     locked: 0
