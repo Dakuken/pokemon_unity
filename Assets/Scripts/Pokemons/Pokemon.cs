@@ -30,6 +30,7 @@ public class Pokemon
         }
     }
 
+    public int Exp { get; set; }
     public int HP { get; set; }
     public List<Move> Moves { get; set; }
     public Move CurrentMove { get; set; }
@@ -50,10 +51,12 @@ public class Pokemon
             if(move.Level <= Level){
                 Moves.Add(new Move(move.Base));
             }
-            if(Moves.Count >= 4){
+            if(Moves.Count >= PokemonBase.MaxNumOfMoves){
                 break;
             }
         }
+        
+        Exp = Base.GetExpForLevel(Level);
         
         CalculateStats();
         HP = MaxHp;
@@ -120,6 +123,30 @@ public class Pokemon
                 StatusChanges.Enqueue($"{Base.Name}'s {stat} fell!");
             
         }
+    }
+    
+    public bool CheckForLevelUp()
+    {
+        if (Exp > Base.GetExpForLevel(level + 1))
+        {
+            ++level;
+            return true;
+        }
+        return false;
+    }
+    
+    public LearnableMove GetLearnableMovesAtCurrentLevel()
+    {
+        var currentLevel = Level;
+        return Base.LearnableMoves.Where(x => x.Level == currentLevel).FirstOrDefault();
+    }
+    
+    public void LearnMove(LearnableMove moveToLearn)
+    {
+        if (Moves.Count > PokemonBase.MaxNumOfMoves)
+            return;
+        
+        Moves.Add(new Move(moveToLearn.Base));
     }
     
     public int Attack{
