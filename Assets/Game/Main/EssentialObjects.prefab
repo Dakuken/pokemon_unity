@@ -1801,17 +1801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0bbe049622c3664d9bdfbdaf45593ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pokemons:
-  - _base: {fileID: 11400000, guid: fc1bee438957ce34db5a9504213978af, type: 2}
-    level: 9
-  - _base: {fileID: 11400000, guid: ffeab3a5486de9046b0d2dca74012b90, type: 2}
-    level: 50
-  - _base: {fileID: 11400000, guid: 721e77809dd04e142853aa85bad0e618, type: 2}
-    level: 1
-  - _base: {fileID: 11400000, guid: 6185847f8078fd840a6f926847740162, type: 2}
-    level: 20
-  - _base: {fileID: 11400000, guid: 227dcf9b967ab2d47ba28c4400361013, type: 2}
-    level: 58
+  pokemons: []
 --- !u!114 &1346158775980503809
 MonoBehaviour:
   m_ObjectHideFlags: 0
