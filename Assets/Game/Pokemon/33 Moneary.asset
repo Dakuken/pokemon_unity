@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
+  m_Name: 33 Moneary
+  m_EditorClassIdentifier: 
+  name: Moneary
+  description: 
+  sprite: {fileID: 0}
+  type1: 2
+  type2: 1
+  maxHp: 61
+  attack: 70
+  defense: 46
+  spAttack: 66
+  spDefense: 53
+  speed: 83
+  expYield: 15
+  growthRate: 1
+  catchRate: 230
+  learnableMoves: []

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
+  m_Name: 25 Lucakou
+  m_EditorClassIdentifier: 
+  name: Lucakou
+  description: 
+  sprite: {fileID: 21300000, guid: 5c003a3542d3df943a933ea5542df5ce, type: 3}
+  type1: 7
+  type2: 4
+  maxHp: 76
+  attack: 93
+  defense: 73
+  spAttack: 115
+  spDefense: 80
+  speed: 106
+  expYield: 60
+  growthRate: 1
+  catchRate: 0
+  learnableMoves: []
