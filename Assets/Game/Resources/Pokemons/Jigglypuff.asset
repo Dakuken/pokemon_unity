@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Jigglypuff
   description: 
-  frontSprite: {fileID: 21300000, guid: 3ef5b978b9914b64fb92dcfcfc996b0e, type: 3}
-  backSprite: {fileID: 21300000, guid: da41741c662926c48b78621deb4630bc, type: 3}
+  sprite: {fileID: 21300000, guid: 3ef5b978b9914b64fb92dcfcfc996b0e, type: 3}
   type1: 1
   type2: 18
   maxHp: 115

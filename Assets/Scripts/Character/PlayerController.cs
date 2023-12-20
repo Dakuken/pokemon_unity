@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, ISavable
 {
     
     [SerializeField] string name;
@@ -44,7 +44,6 @@ public class PlayerController : MonoBehaviour
         foreach(var collider in colliders){
             var triggerable = collider.GetComponent<IPlayerTriggerable>();
             if(triggerable != null){
-                character.Animator.IsMoving = false;
                 triggerable.onPlayerTriggered(this);
                 break;
             }
@@ -61,6 +60,18 @@ public class PlayerController : MonoBehaviour
         }
     }
     
+    public object CaptureState()
+    {
+        float[] position = new float[] {transform.position.x, transform.position.y};
+        return position;
+    }
+
+    public void RestoreState(object state)
+    {
+        var position = (float[]) state;
+        transform.position = new Vector3(position[0], position[1]);
+    }
+    
     public string Name
     {
         get => name;
@@ -75,4 +86,6 @@ public class PlayerController : MonoBehaviour
     {
         get => character;
     }
+
+    
 }
