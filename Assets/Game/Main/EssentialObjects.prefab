@@ -1802,8 +1802,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 0}
-    level: 0
+  - _base: {fileID: 11400000, guid: ca571054db681dc4482b57b24471e6da, type: 2}
+    level: 14
 --- !u!114 &1346158775980503809
 MonoBehaviour:
   m_ObjectHideFlags: 0
