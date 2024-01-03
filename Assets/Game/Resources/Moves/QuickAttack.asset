@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d8e80f754896154da4ecf81d9a19703, type: 3}
   m_Name: QuickAttack
   m_EditorClassIdentifier: 
-  name: Quick Attack
+  name: Vive attaque
   description: 
   type: 1
   power: 40
