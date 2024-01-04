@@ -25,6 +25,8 @@ public class GameController : MonoBehaviour
    {
       Instance = this;
       ConditionsDB.Init();
+      PokemonDB.Init();
+      MoveDB.Init();
    }
 
    private void Start()
@@ -131,8 +133,6 @@ public class GameController : MonoBehaviour
    {
       previousScene = currentScene;
       currentScene = currScene;
-      
-      
    }
 }
    
