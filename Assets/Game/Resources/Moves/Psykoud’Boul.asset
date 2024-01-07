@@ -15,7 +15,7 @@ MonoBehaviour:
   name: "Psykoud\u2019Boul"
   description: 
   type: 11
-  power: 90
+  power: 70
   accuracy: 100
   alwaysHits: 1
   pp: 20

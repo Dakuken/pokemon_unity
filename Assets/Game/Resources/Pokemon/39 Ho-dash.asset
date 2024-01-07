@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Ho-dash
   description: 
   sprite: {fileID: 21300000, guid: 2946959856d40f94a98a546bfea879c2, type: 3}
-  type1: 0
+  type1: 2
   type2: 0
   maxHp: 92
   attack: 110
@@ -26,4 +26,12 @@ MonoBehaviour:
   expYield: 50
   growthRate: 1
   catchRate: 130
-  learnableMoves: []
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 8462b38f651d3ee4eb50d5bb7163e065, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: 243bb8f485708064eb48dd68b8e3054b, type: 2}
+    level: 3
+  - moveBase: {fileID: 11400000, guid: 8259ac24c4fd3d046ae749d2f0a171bc, type: 2}
+    level: 3
+  - moveBase: {fileID: 11400000, guid: f7b4451ec0e0b6f4e853dbba97182612, type: 2}
+    level: 4

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Griffe Ombre\t"
   description: 
-  type: 0
+  type: 14
   power: 70
   accuracy: 0
   alwaysHits: 1

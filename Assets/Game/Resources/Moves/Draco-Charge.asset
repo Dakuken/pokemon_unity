@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Draco-Charge
   description: 
-  type: 0
+  type: 15
   power: 100
   accuracy: 95
   alwaysHits: 0

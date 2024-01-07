@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Hydroblast
   description: 
-  type: 0
+  type: 3
   power: 120
   accuracy: 80
   alwaysHits: 0

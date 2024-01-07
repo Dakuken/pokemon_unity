@@ -26,4 +26,10 @@ MonoBehaviour:
   expYield: 25
   growthRate: 1
   catchRate: 180
-  learnableMoves: []
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 76d95658a02ee0f41a37402f9bc2a6a4, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: 955f9a0969c39864faa3d66e4be4c75d, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: 7bdc28b8a9c35b14098478f3b975c5f9, type: 2}
+    level: 1

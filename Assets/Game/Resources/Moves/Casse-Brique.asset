@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Casse-Brique
   description: 
-  type: 0
+  type: 7
   power: 75
   accuracy: 0
   alwaysHits: 1

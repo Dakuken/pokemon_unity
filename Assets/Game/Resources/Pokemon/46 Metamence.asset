@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
-  m_Name: 46 Dracofuse
+  m_Name: 46 Metamence
   m_EditorClassIdentifier: 
-  name: Dracofise
+  name: Metamence
   description: 
   sprite: {fileID: 21300000, guid: 9960162809931e54bbb27ab536d22bb4, type: 3}
-  type1: 0
-  type2: 0
+  type1: 17
+  type2: 15
   maxHp: 85
   attack: 135
   defense: 96
@@ -26,4 +26,12 @@ MonoBehaviour:
   expYield: 70
   growthRate: 0
   catchRate: 100
-  learnableMoves: []
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: ff4b727e28fcf784b9d043940472aacd, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: d268d99c300af3e40aa7f17e3a2b7cff, type: 2}
+    level: 3
+  - moveBase: {fileID: 11400000, guid: 2347dda45766ae5408b4d17d2933ce41, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: 751ac50b6d135ad4088984dc8fb306eb, type: 2}
+    level: 2

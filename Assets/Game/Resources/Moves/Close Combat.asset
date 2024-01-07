@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Close Combat
   description: 
-  type: 0
+  type: 7
   power: 120
   accuracy: 85
   alwaysHits: 0

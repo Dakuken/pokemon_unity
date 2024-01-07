@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Eclaboussure
   description: 
   type: 3
-  power: 40
+  power: 60
   accuracy: 0
   alwaysHits: 1
   pp: 40

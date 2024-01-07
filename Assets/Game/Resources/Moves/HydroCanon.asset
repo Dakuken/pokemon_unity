@@ -15,7 +15,7 @@ MonoBehaviour:
   name: HydroCanon
   description: "Lance une \xE9norme jet d'eau sur l'\xE9n\xE9mie"
   type: 3
-  power: 110
+  power: 100
   accuracy: 90
   alwaysHits: 0
   pp: 0

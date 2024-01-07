@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
-  m_Name: 45 Fusefeu
+  m_Name: 45 Metelgon
   m_EditorClassIdentifier: 
-  name: Fusefeu
+  name: Metelgon
   description: 
   sprite: {fileID: 21300000, guid: 6fc2cf57b7394e144a2e358ff884f400, type: 3}
   type1: 17
@@ -26,4 +26,10 @@ MonoBehaviour:
   expYield: 40
   growthRate: 1
   catchRate: 150
-  learnableMoves: []
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 8462b38f651d3ee4eb50d5bb7163e065, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: f2639ad9f8b2e194cb22a2bb893308f4, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: 724d8bc0e9fc1654b85900634386cc6d, type: 2}
+    level: 2
