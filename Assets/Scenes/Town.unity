@@ -6820,6 +6820,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trainer
       objectReference: {fileID: 0}
+    - target: {fileID: 5100556235662483152, guid: 7d63336684f8da84dbab2663f5c11362, type: 3}
+      propertyPath: pokemons.Array.data[0].level
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 9130573290353374799, guid: 7d63336684f8da84dbab2663f5c11362, type: 3}
       propertyPath: uniqueId
       value: 3fbec834-c298-4130-87de-0b64ff6764ff

@@ -3,13 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameState { FreeRoam, Battle, Dialog, Cutscene, Paused }
+public enum GameState { FreeRoam, Battle, Dialog, Cutscene, Paused, Menu, PartyScreen, Bag }
 
 public class GameController : MonoBehaviour
 {
    [SerializeField] PlayerController playerController;
    [SerializeField] BattleSystem battleSystem;
    [SerializeField] Camera worldCamera;
+   [SerializeField] PartyScreen partyScreen;
+   [SerializeField] InventoryUI inventoryUI;
    
    GameState state;
    
@@ -20,10 +22,18 @@ public class GameController : MonoBehaviour
    public SceneDetails previousScene { get; private set; }
    
    public static GameController Instance { get; private set; }
+   
+   MenuController menuController;
 
    private void Awake()
    {
       Instance = this;
+      
+      menuController = GetComponent<MenuController>();
+      
+      //Cursor.lockState = CursorLockMode.Locked;
+      //Cursor.visible = false;
+      
       ConditionsDB.Init();
       PokemonDB.Init();
       MoveDB.Init();
@@ -32,16 +42,26 @@ public class GameController : MonoBehaviour
    private void Start()
    {
       battleSystem.OnBattleOver += EndBattle;
-      
+      partyScreen.Init();
       DialogManager.Instance.OnShowDialog += () => state = GameState.Dialog;
       DialogManager.Instance.OnCloseDialog += () =>
       {
          if(state == GameState.Dialog)
             state = GameState.FreeRoam;
       };
+      
+      menuController.onBack += () =>
+      {
+         state = GameState.FreeRoam;
+         playerController.enabled = true;
+      };
+      
+      menuController.onMenuSelected += OnMenuSelected;
 
    }
-   
+
+  
+
    public void PausedGame(bool pause){
       if (pause)
       {
@@ -108,14 +128,12 @@ public class GameController : MonoBehaviour
       {
          playerController.HandleUpdate();
          
-         if (Input.GetKeyDown(KeyCode.S))
+         if(Input.GetKeyDown(KeyCode.Return))
          {
-            SavingSystem.i.Save("saveSlot1");
+            menuController.OpenMenu();
+            state = GameState.Menu;
          }
-         if(Input.GetKeyDown(KeyCode.L))
-         {
-            SavingSystem.i.Load("saveSlot1");
-         }
+        
       }
       else if (state == GameState.Battle)
       {
@@ -125,6 +143,35 @@ public class GameController : MonoBehaviour
       {
          DialogManager.Instance.HandleUpdate();
       }
+      else if (state == GameState.Menu)
+      {
+         menuController.HandleUpdate();
+      }
+      else if (state == GameState.PartyScreen)
+      {
+         Action onSelected = () =>
+         {
+            //sommaire
+         };
+         
+         Action onBack = () =>
+         {
+            partyScreen.gameObject.SetActive(false);
+            state = GameState.FreeRoam;
+         };
+         
+         partyScreen.HandleUpdate(onSelected, onBack);
+      }
+      else if(state == GameState.Bag)
+      {
+         Action onBack = () =>
+         {
+            inventoryUI.gameObject.SetActive(false);
+            state = GameState.FreeRoam;
+         };
+         
+         inventoryUI.HandleUpdate(onBack);
+      }
 
      
    }
@@ -133,6 +180,37 @@ public class GameController : MonoBehaviour
    {
       previousScene = currentScene;
       currentScene = currScene;
+   }
+   
+   private void OnMenuSelected(int selectedItem)
+   {
+      if (selectedItem == 0)
+      {
+         // Pokemon
+         partyScreen.gameObject.SetActive(true);
+         state = GameState.PartyScreen;
+      }
+      else if (selectedItem == 1)
+      {
+         // Bag
+         inventoryUI.gameObject.SetActive(true);
+         state = GameState.Bag;
+      }
+      else if (selectedItem == 2)
+      {
+         // Save
+         SavingSystem.i.Save("saveSlot1");
+         state = GameState.FreeRoam;
+      }
+      else if (selectedItem == 3)
+      {
+         // Load
+         SavingSystem.i.Load("saveSlot1");
+         state = GameState.FreeRoam;
+      }
+      
+      
+      
    }
 }
    
