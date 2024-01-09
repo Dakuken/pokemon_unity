@@ -5751,6 +5751,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5743576778466858018, guid: dfbfdd7e78a7d4c4193a692b195780fb, type: 3}
+      propertyPath: pokemons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743576778466858018, guid: dfbfdd7e78a7d4c4193a692b195780fb, type: 3}
+      propertyPath: pokemons.Array.data[0]._base
+      value: 
+      objectReference: {fileID: 11400000, guid: 57273a2171d014240a6ac049b1fbf808, type: 2}
+    - target: {fileID: 5743576778466858018, guid: dfbfdd7e78a7d4c4193a692b195780fb, type: 3}
+      propertyPath: pokemons.Array.data[0].level
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743576778466858018, guid: dfbfdd7e78a7d4c4193a692b195780fb, type: 3}
+      propertyPath: pokemons.Array.data[1]._base
+      value: 
+      objectReference: {fileID: 11400000, guid: 721e77809dd04e142853aa85bad0e618, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
