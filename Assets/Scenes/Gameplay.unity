@@ -305,6 +305,10 @@ PrefabInstance:
       value: Village base
       objectReference: {fileID: 0}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
+      propertyPath: backgroundMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: fb1e5cf07bd38c743a237db8aa85eb61, type: 3}
+    - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -645,6 +649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Route 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
+      propertyPath: backgroundMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: d078ad20e2087f8448e739678ab29e73, type: 3}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.size
       value: 3
@@ -2907,6 +2915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Route 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
+      propertyPath: backgroundMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ce1bce8c9d08554aa15ccc9ff9a4da3, type: 3}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.size
       value: 2

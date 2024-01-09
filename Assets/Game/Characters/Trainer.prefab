@@ -235,6 +235,7 @@ MonoBehaviour:
     - C'est ciao comme disais l'autre
   exclamation: {fileID: 5732180444288742015}
   fov: {fileID: 5262757346247754045}
+  trainerEncounterMusic: {fileID: 8300000, guid: 2713c544f91fdcb43a7862c49b0d96e5, type: 3}
 --- !u!114 &5100556235662483152
 MonoBehaviour:
   m_ObjectHideFlags: 0

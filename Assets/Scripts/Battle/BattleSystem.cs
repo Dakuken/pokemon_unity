@@ -19,6 +19,11 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] MoveSelectionUI moveSelectionUI;
     [SerializeField] InventoryUI inventoryUI;
     
+    [Header("Audio")]
+    [SerializeField] AudioClip wildBattleBGM;
+    [SerializeField] AudioClip trainerBattleBGM;
+    [SerializeField] AudioClip victoryBGM;
+    
     public event Action<bool> OnBattleOver;
     
     BattleState state;
@@ -44,6 +49,8 @@ public class BattleSystem : MonoBehaviour
         player = playerParty.GetComponent<PlayerController>();
         isTrainerBattle = false;
         
+        AudioManager.i.PlayMusic(wildBattleBGM);
+        
         StartCoroutine(SetupBattle());
     }
     
@@ -55,6 +62,8 @@ public class BattleSystem : MonoBehaviour
         isTrainerBattle = true;
         player = playerParty.GetComponent<PlayerController>();
         trainer = trainerParty.GetComponent<TrainerController>();
+        
+        AudioManager.i.PlayMusic(trainerBattleBGM);
         
         StartCoroutine(SetupBattle());
     }
@@ -240,8 +249,11 @@ public class BattleSystem : MonoBehaviour
         if(CheckIfMoveHits(move,sourceUnit.Pokemon,targetUnit.Pokemon))
         {
             sourceUnit.PlayAttackAnimation();
+            AudioManager.i.PlaySFX(move.Base.Sound);
+            
             yield return new WaitForSeconds(1f);
             targetUnit.PlayHitAnimation();
+            AudioManager.i.PlaySFX(AudioId.Hit);
 
             if (move.Base.Category == MoveCategory.Status)
             {
@@ -360,6 +372,13 @@ public class BattleSystem : MonoBehaviour
 
         if (!faintedUnit.IsPlayerUnit)
         {
+            bool battleWon = true;
+            if (isTrainerBattle)
+                battleWon = trainerParty.GetHealthyPokemon() == null;
+            
+            if (battleWon)
+                AudioManager.i.PlayMusic(victoryBGM);
+            
             int expYield = faintedUnit.Pokemon.Base.ExpYield;
             int enemyLevel = faintedUnit.Pokemon.Level;
             float trainerBonus = (isTrainerBattle) ? 1.5f : 1f;

@@ -31,6 +31,8 @@ public class DialogManager : MonoBehaviour
     {
         IsShowing = true;
         dialogBox.SetActive(true);
+        
+        
 
         yield return TypeDialog(text);
         if(waitForInput)
@@ -45,6 +47,8 @@ public class DialogManager : MonoBehaviour
         yield return new WaitForEndOfFrame();
         
         OnShowDialog?.Invoke();
+        
+        AudioManager.i.PlaySFX(AudioId.UISelect);
         
         IsShowing = true;
         this.dialog = dialog;
