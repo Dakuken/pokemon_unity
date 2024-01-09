@@ -23,7 +23,7 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
 
     private void Start()
     {
-        SetFovRotation(character.Animator.DefaultDirection);
+        //SetFovRotation(character.Animator.DefaultDirection);
     }
     
     public void Update()
@@ -81,7 +81,7 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
         else if(dir == FacingDirection.Up)
             angle = 180f;
         else if(dir == FacingDirection.Left)
-            angle = 270f;
+            angle = 270;
         
         fov.transform.eulerAngles = new Vector3(0f, 0f, angle);
     }

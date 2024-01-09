@@ -9,60 +9,60 @@ EditorBuildSettings:
     path: Assets/Scenes/Gameplay.unity
     guid: 260ba352275f19349a85effbe9aff4ce
   - enabled: 1
-    path: Assets/Scenes/Haut maison.unity
+    path: Assets/Scenes/GameScene/Haut maison.unity
     guid: 59d56906e0cf46046a30df2c0c15e615
   - enabled: 1
-    path: Assets/Scenes/Bas maison.unity
+    path: Assets/Scenes/GameScene/Bas maison.unity
     guid: ed24193b2241b2a409c0c7c7b93d4fd3
   - enabled: 1
-    path: Assets/Scenes/Village base.unity
+    path: Assets/Scenes/GameScene/Village base.unity
     guid: 9d6d2ddc294a29e41a484f226d88ab46
   - enabled: 1
-    path: Assets/Scenes/Route 1.unity
+    path: Assets/Scenes/GameScene/Route 1.unity
     guid: adfb10f296dd49a449c86b1da8d306af
   - enabled: 1
-    path: Assets/Scenes/Route 2.unity
+    path: Assets/Scenes/GameScene/route 2.unity
     guid: 8567ee41c2c15a641b5b2ea2b1c94428
   - enabled: 1
-    path: Assets/Scenes/Ville 1.unity
+    path: Assets/Scenes/GameScene/Ville 1.unity
     guid: 3509ded8039356e4f8e6d43f9d8e5fe5
   - enabled: 1
-    path: Assets/Scenes/Route 3.unity
+    path: Assets/Scenes/GameScene/route 3.unity
     guid: 9755c5c4925cc324c8e65736d04ee014
   - enabled: 1
-    path: Assets/Scenes/Ville premiere arene.unity
+    path: Assets/Scenes/GameScene/Ville premiere arene.unity
     guid: 71c93ae420ea6c442bb1bf7c3a8c0388
   - enabled: 1
-    path: "Assets/Scenes/Ar\xE8ne 1.unity"
+    path: "Assets/Scenes/GameScene/Ar\xE8ne 1.unity"
     guid: 5d6b07d68c3ea7f42bcc933c05138f2d
   - enabled: 1
-    path: Assets/Scenes/Foret.unity
+    path: Assets/Scenes/GameScene/Foret.unity
     guid: 74f1009c21a7dcb43837f374f6611abd
   - enabled: 1
-    path: Assets/Scenes/Route 4.unity
+    path: Assets/Scenes/GameScene/Route 4.unity
     guid: c1ca9aa493451204c9bff8af480d4496
   - enabled: 1
-    path: Assets/Scenes/Ville deuxieme arene.unity
+    path: Assets/Scenes/GameScene/Ville deuxieme arene.unity
     guid: b1913e4937dd10f44801bc571e764e59
   - enabled: 1
-    path: "Assets/Scenes/Ar\xE8ne 2.unity"
+    path: "Assets/Scenes/GameScene/Ar\xE8ne 2.unity"
     guid: 5efe98af0c6a926409bb49704d82e570
   - enabled: 1
-    path: Assets/Scenes/Route victoire.unity
+    path: Assets/Scenes/GameScene/route victoire.unity
     guid: 9f376071fce35864b9ae90708e3f494a
   - enabled: 1
-    path: Assets/Scenes/pre Ligue.unity
+    path: Assets/Scenes/GameScene/pre Ligue.unity
     guid: ae7796b396707c24bb56075f86d2b742
   - enabled: 1
-    path: Assets/Scenes/Salle 1 league.unity
+    path: Assets/Scenes/GameScene/Salle 1 league.unity
     guid: b08ae37b3ed055f488d1ec158bfa6c1e
   - enabled: 1
-    path: Assets/Scenes/Salle 2 league.unity
+    path: Assets/Scenes/GameScene/Salle 2 league.unity
     guid: 18d6037768541234dbd7700f0d6408b2
   - enabled: 1
-    path: Assets/Scenes/Salle 3 league.unity
+    path: Assets/Scenes/GameScene/Salle 3 league.unity
     guid: d08e223f611c0e84f97903e9651550f3
   - enabled: 1
-    path: Assets/Scenes/Salle 4 league.unity
+    path: Assets/Scenes/GameScene/Salle 4 league.unity
     guid: 2ee3e37eec8d7cf42863350fc48d7297
   m_configObjects: {}

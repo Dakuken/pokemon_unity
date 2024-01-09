@@ -408,11 +408,11 @@ PrefabInstance:
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 886499083}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[1]
       value: 
-      objectReference: {fileID: 1274880533}
+      objectReference: {fileID: 693576393}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -535,11 +535,11 @@ PrefabInstance:
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1995419268}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[1]
       value: 
-      objectReference: {fileID: 1274880533}
+      objectReference: {fileID: 1553284518}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -574,6 +574,17 @@ MonoBehaviour:
     level: 10
   - _base: {fileID: 11400000, guid: 227dcf9b967ab2d47ba28c4400361013, type: 2}
     level: 10
+--- !u!114 &521079071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
+  m_PrefabInstance: {fileID: 521079068}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521079069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7a523581ceb034aba40ad70bb18170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &530957919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -636,7 +647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[0]
@@ -646,6 +657,10 @@ PrefabInstance:
       propertyPath: connectedScenes.Array.data[1]
       value: 
       objectReference: {fileID: 530957922}
+    - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
+      propertyPath: connectedScenes.Array.data[2]
+      value: 
+      objectReference: {fileID: 1444169007}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -756,7 +771,7 @@ PrefabInstance:
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[0]
       value: 
-      objectReference: {fileID: 778630859}
+      objectReference: {fileID: 2080201753}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[1]
       value: 
@@ -2232,6 +2247,17 @@ MonoBehaviour:
   wildPokemons:
   - _base: {fileID: 11400000, guid: 57273a2171d014240a6ac049b1fbf808, type: 2}
     level: 29
+--- !u!114 &693576393 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
+  m_PrefabInstance: {fileID: 693576390}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693576391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7a523581ceb034aba40ad70bb18170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &734792689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2438,16 +2464,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1602553476}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[1]
       value: 
-      objectReference: {fileID: 1274880533}
+      objectReference: {fileID: 1602553476}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2482,6 +2508,17 @@ MonoBehaviour:
     level: 10
   - _base: {fileID: 11400000, guid: 227dcf9b967ab2d47ba28c4400361013, type: 2}
     level: 10
+--- !u!114 &865274611 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
+  m_PrefabInstance: {fileID: 865274608}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865274609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7a523581ceb034aba40ad70bb18170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &886499080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2544,7 +2581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[0]
@@ -2554,6 +2591,10 @@ PrefabInstance:
       propertyPath: connectedScenes.Array.data[1]
       value: 
       objectReference: {fileID: 443199968}
+    - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
+      propertyPath: connectedScenes.Array.data[2]
+      value: 
+      objectReference: {fileID: 2003437036}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2990,11 +3031,11 @@ PrefabInstance:
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 521079071}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[1]
       value: 
-      objectReference: {fileID: 1274880533}
+      objectReference: {fileID: 1577427319}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3029,6 +3070,17 @@ MonoBehaviour:
     level: 10
   - _base: {fileID: 11400000, guid: 227dcf9b967ab2d47ba28c4400361013, type: 2}
     level: 10
+--- !u!114 &1553284518 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
+  m_PrefabInstance: {fileID: 1553284515}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553284516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7a523581ceb034aba40ad70bb18170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1577427316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3091,12 +3143,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 661232190}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[1]
       value: 
@@ -3135,6 +3187,17 @@ MonoBehaviour:
     level: 10
   - _base: {fileID: 11400000, guid: 227dcf9b967ab2d47ba28c4400361013, type: 2}
     level: 10
+--- !u!114 &1577427319 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
+  m_PrefabInstance: {fileID: 1577427316}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577427317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7a523581ceb034aba40ad70bb18170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1602553473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3197,7 +3260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[0]
@@ -3207,6 +3270,10 @@ PrefabInstance:
       propertyPath: connectedScenes.Array.data[1]
       value: 
       objectReference: {fileID: 1170237565}
+    - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
+      propertyPath: connectedScenes.Array.data[2]
+      value: 
+      objectReference: {fileID: 865274611}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3319,11 +3386,11 @@ PrefabInstance:
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 693576393}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[1]
       value: 
-      objectReference: {fileID: 1274880533}
+      objectReference: {fileID: 521079071}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3358,6 +3425,17 @@ MonoBehaviour:
     level: 10
   - _base: {fileID: 11400000, guid: 227dcf9b967ab2d47ba28c4400361013, type: 2}
     level: 10
+--- !u!114 &1995419268 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
+  m_PrefabInstance: {fileID: 1995419265}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995419266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7a523581ceb034aba40ad70bb18170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2003437033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3420,12 +3498,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 886499083}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[1]
       value: 
@@ -3464,6 +3542,17 @@ MonoBehaviour:
     level: 10
   - _base: {fileID: 11400000, guid: 227dcf9b967ab2d47ba28c4400361013, type: 2}
     level: 10
+--- !u!114 &2003437036 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
+  m_PrefabInstance: {fileID: 2003437033}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003437034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7a523581ceb034aba40ad70bb18170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2080201750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3573,109 +3662,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e7a523581ceb034aba40ad70bb18170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &6739126595007250625
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2900151507568113696, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2900151507568113696, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2900151507568113696, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2900151507568113696, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2900151507568113696, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2900151507568113696, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2900151507568113696, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2900151507568113696, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2900151507568113696, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2900151507568113696, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4348191401614956106, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
-      propertyPath: m_Name
-      value: Town
-      objectReference: {fileID: 0}
-    - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
-      propertyPath: connectedScenes.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
-      propertyPath: connectedScenes.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
-      propertyPath: connectedScenes.Array.data[1]
-      value: 
-      objectReference: {fileID: 1274880533}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4348191401614956106, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6739126595007250627}
-  m_SourcePrefab: {fileID: 100100000, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
---- !u!1 &6739126595007250626 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4348191401614956106, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
-  m_PrefabInstance: {fileID: 6739126595007250625}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6739126595007250627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6739126595007250626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b47cec7e958a14d80a6469b294d4d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wildPokemons:
-  - _base: {fileID: 11400000, guid: fc1bee438957ce34db5a9504213978af, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 6185847f8078fd840a6f926847740162, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: ffeab3a5486de9046b0d2dca74012b90, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 227dcf9b967ab2d47ba28c4400361013, type: 2}
-    level: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 6739126595007250625}
   - {fileID: 693576390}
   - {fileID: 1995419265}
   - {fileID: 521079068}
