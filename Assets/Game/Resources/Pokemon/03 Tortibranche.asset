@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
   m_Name: 03 Tortibranche
   m_EditorClassIdentifier: 
-  name: TortiBranche
+  name: Toritar
   description: 
   sprite: {fileID: 21300000, guid: 19ba23dd5a112624ca65839f85566bb2, type: 3}
   type1: 5

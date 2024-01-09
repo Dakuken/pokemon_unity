@@ -417,8 +417,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 8751058a9af228345a56519b1daff24c, type: 2}
+    level: 20
 --- !u!114 &543204917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,12 +431,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: "V\xE9t\xE9ran Pok\xE9mon"
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - "J'ai parcouru le monde entier \xE0 la recherche des Pok\xE9mon les plus rares
+      et les plus puissants."
+    - "Tu veux voir mon \xE9quipe de champions ?"
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"
@@ -860,8 +861,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 2fce4dc4c45c7ec4bbafcb8e03eb55da, type: 2}
+    level: 20
 --- !u!114 &787482187
 MonoBehaviour:
   m_ObjectHideFlags: 0

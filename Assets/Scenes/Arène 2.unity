@@ -870,8 +870,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 113b15d209126e540985bea8b6a30a9a, type: 2}
+    level: 21
+  - _base: {fileID: 11400000, guid: 166cc38362f0f2240b168f6e98960c38, type: 2}
+    level: 22
 --- !u!114 &329719109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1377,8 +1379,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 8751058a9af228345a56519b1daff24c, type: 2}
+    level: 22
+  - _base: {fileID: 11400000, guid: 8abd09119d9387446a673856a640525a, type: 2}
+    level: 22
 --- !u!114 &601844039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1391,12 +1395,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: "Dresseur Passionn\xE9"
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - "H\xE9 toi ! J'ai voyag\xE9 \xE0 travers des r\xE9gions enti\xE8res pour perfectionner
+      mes comp\xE9tences de Dresseur. "
+    - "u es pr\xEAt(e) \xE0 voir la puissance de ma formation intensive ?"
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"
@@ -6166,8 +6171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: fb072311f5d80634cb5722d50ac26743, type: 2}
+    level: 22
 --- !u!114 &1381627936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6180,12 +6185,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: Dresseur de Feu
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - "Les flammes dans mon c\u0153ur sont aussi ardentes que la puissance de mes
+      Pok\xE9mon de feu ! "
+    - " Pr\xE9pare-toi \xE0 \xEAtre consum\xE9(e) par l'intensit\xE9 de notre duel
+      !"
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"
@@ -6415,8 +6422,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 9a7770c832d10cd49a0d160ac9fb2ba5, type: 2}
+    level: 22
+  - _base: {fileID: 11400000, guid: 91325d473427a614995286a7cb536a60, type: 2}
+    level: 23
+  - _base: {fileID: 11400000, guid: 951de876b9582854ea01d078a1262fab, type: 2}
+    level: 24
 --- !u!114 &1926861147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6429,12 +6440,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: "Champion  d'ar\xE8ne"
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - Tu veux continue, bas toi!!!
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"

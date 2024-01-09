@@ -1586,8 +1586,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: e038623e3bb392f4a8f4b8e908447068, type: 2}
+    level: 30
+  - _base: {fileID: 11400000, guid: fb072311f5d80634cb5722d50ac26743, type: 2}
+    level: 30
+  - _base: {fileID: 11400000, guid: 951de876b9582854ea01d078a1262fab, type: 2}
+    level: 30
+  - _base: {fileID: 11400000, guid: 5d74822cc13678248b177bd2e3b9332c, type: 2}
+    level: 30
+  - _base: {fileID: 11400000, guid: 331c23b8688a3ea4695036ddf38f77d1, type: 2}
+    level: 30
 --- !u!114 &1792436775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1600,12 +1608,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: Alexis
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - Le php c'est bien
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"

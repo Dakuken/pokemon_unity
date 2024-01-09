@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
   m_Name: 01 Torti
   m_EditorClassIdentifier: 
-  name: Torti
+  name: Turtwig
   description: dffd
   sprite: {fileID: 21300000, guid: c77328298dab9b7488ab6282c7a054ef, type: 3}
   type1: 5

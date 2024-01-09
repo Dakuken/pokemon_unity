@@ -960,8 +960,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 8cef1f0169a0d544d8d0a5eca98d9646, type: 2}
+    level: 12
+  - _base: {fileID: 11400000, guid: a3ddfd3abccabb04986c8f8ffaa5774b, type: 2}
+    level: 13
+  - _base: {fileID: 11400000, guid: faa59e0b9e9989c4b86e06c1b86cbc32, type: 2}
+    level: 14
 --- !u!114 &171715092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -974,12 +978,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: "Maitre d'ar\xE8ne "
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - 'Tu veux pouvoir continue l''aventure '
+    - Il faudra d'abord me battre
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"
@@ -1209,8 +1213,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 05420a1f22a73904596e7db8a9606ab1, type: 2}
+    level: 11
+  - _base: {fileID: 11400000, guid: efa7b81739f545648bab3f0e499007b2, type: 2}
+    level: 12
 --- !u!114 &329719109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1223,12 +1229,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: Dresseur A
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - Tu n'atteindra pas le chef si facilement que sa
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"
@@ -4942,8 +4947,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: cdb22750a92176444959aadf4e9f0bf6, type: 2}
+    level: 11
+  - _base: {fileID: 11400000, guid: b1b66271bc7f395498cddd269d948580, type: 2}
+    level: 12
 --- !u!114 &1381627936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4956,12 +4963,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: Dresseur B
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - Il faudra me passer sur le corp
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"

@@ -369,8 +369,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 1a0342c38d444ab418ad52fd0a7cb066, type: 2}
+    level: 30
+  - _base: {fileID: 11400000, guid: 90597a39b14d95c4f9903c815ddc9442, type: 2}
+    level: 30
+  - _base: {fileID: 11400000, guid: 76315f3ca36e1424da86ccc345d4dfef, type: 2}
+    level: 30
+  - _base: {fileID: 11400000, guid: af0ad5b1af18e9b4fb6780373c28c7b1, type: 2}
+    level: 30
+  - _base: {fileID: 11400000, guid: d8c087ccc11f47744b39d1c712c9f605, type: 2}
+    level: 30
+  - _base: {fileID: 11400000, guid: a36ed8e0b736c864f83c9a005b450703, type: 2}
+    level: 30
 --- !u!114 &395933026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,12 +393,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: Quentin
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - 'Oh shrek ! '
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"

@@ -18880,8 +18880,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 4de1934a0c7381e48b86d4caed1ed61c, type: 2}
+    level: 15
 --- !u!114 &702989053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18894,12 +18894,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: Dresseur Expert
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - "H\xE9, tu veux un conseil de ma part ?"
+    - "La cl\xE9 pour devenir un vrai ma\xEEtre Pok\xE9mon, c'est la patience et
+      l'amour envers tes compagnons !"
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"
@@ -19129,8 +19130,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: bff0ea9c23674b6449b7d7e51162a3eb, type: 2}
+    level: 16
+  - _base: {fileID: 11400000, guid: fb072311f5d80634cb5722d50ac26743, type: 2}
+    level: 16
 --- !u!114 &765023205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19147,8 +19150,9 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - "Oh l\xE0 l\xE0, regardez ce fossile rare que j'ai trouv\xE9 !"
+    - "Les Pok\xE9mon pr\xE9historiques sont vraiment intrigants."
+    - "Peut-\xEAtre que cela pourrait \xE9veiller un Pok\xE9mon ancien !"
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"
@@ -19546,8 +19550,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 771f283d0c4eed94aa21039636cd860e, type: 2}
+    level: 17
 --- !u!114 &916082482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19560,12 +19564,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: Gamin Malicieux
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - "Haha, je t'ai eu ! Tu pensais vraiment que j'\xE9tais un simple Dresseur d\xE9butant,
+      hein ? "
+    - " Mes Pok\xE9mon ont plus de mordant que tu ne le penses !"
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"
@@ -38144,8 +38149,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: b2faaed855b3cec40902586a61782dbc, type: 2}
+    level: 14
+  - _base: {fileID: 11400000, guid: 74ade6594d2f79848a30e47269ea56d1, type: 2}
+    level: 14
 --- !u!114 &1477330932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38158,12 +38165,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: "Homme cach\xE9 dans les herbes"
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - Ahaha, je t'es fait peur !!
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"
@@ -38477,8 +38483,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 113b15d209126e540985bea8b6a30a9a, type: 2}
+    level: 14
 --- !u!114 &1608973253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38491,12 +38497,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: Dresseur d'insecte
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - Je cherche des insectes
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"
@@ -38816,8 +38821,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 2fce4dc4c45c7ec4bbafcb8e03eb55da, type: 2}
+    level: 15
 --- !u!114 &1931929336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38830,12 +38835,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: "Scientifique Pok\xE9mon:"
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - "Ah, jeune Dresseur ! Les Pok\xE9mon sont fascinants, n'est-ce pas ?"
+    - "Saviez-vous que chaque Pok\xE9mon poss\xE8de une empreinte digitale unique
+      dans son ADN ?"
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"

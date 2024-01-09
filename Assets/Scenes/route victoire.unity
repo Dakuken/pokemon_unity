@@ -5764,8 +5764,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: faa59e0b9e9989c4b86e06c1b86cbc32, type: 2}
+    level: 24
+  - _base: {fileID: 11400000, guid: eb5db07396972e144b4c2930c970b729, type: 2}
+    level: 24
+  - _base: {fileID: 11400000, guid: 9a7770c832d10cd49a0d160ac9fb2ba5, type: 2}
+    level: 24
 --- !u!114 &339244284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5778,12 +5782,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: "Dresseuse \xC9nigmatique"
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - "Les liens avec nos Pok\xE9mon vont au-del\xE0 des mots."
+    - "Mon \xE9quipe et moi partageons une connexion myst\xE9rieuse. Pr\xE9pare-toi
+      \xE0 \xEAtre \xE9merveill\xE9(e) !\""
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"
@@ -6486,8 +6491,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: e038623e3bb392f4a8f4b8e908447068, type: 2}
+    level: 26
+  - _base: {fileID: 11400000, guid: 91325d473427a614995286a7cb536a60, type: 2}
+    level: 26
+  - _base: {fileID: 11400000, guid: 979865845992e6343863ceaed8d92375, type: 2}
+    level: 26
 --- !u!114 &552310319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6500,12 +6509,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: "Dresseur Strat\xE8ge"
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - "Le v\xE9ritable art du combat r\xE9side dans la strat\xE9gie. Regarde attentivement,
+      car chaque mouvement que je fais a un but pr\xE9cis."
+    - " Pr\xE9pare-toi \xE0 \xEAtre d\xE9fi\xE9(e) intellectuellement !"
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"
@@ -6735,8 +6745,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 5d74822cc13678248b177bd2e3b9332c, type: 2}
+    level: 27
+  - _base: {fileID: 11400000, guid: 1a0342c38d444ab418ad52fd0a7cb066, type: 2}
+    level: 27
 --- !u!114 &654731079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6749,12 +6761,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: "Dresseuse \xC9nergique"
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - "Yeah ! Le monde est notre terrain de jeu, et mes Pok\xE9mon et moi, nous sommes
+      ici pour nous \xE9clater ! Tu veux te joindre \xE0 la f\xEAte ?"
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"
@@ -7068,8 +7080,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 90597a39b14d95c4f9903c815ddc9442, type: 2}
+    level: 29
 --- !u!114 &1034093355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7082,12 +7094,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: Dresseuse Mystique
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - "Les Pok\xE9mon ont une aura mystique qui les entoure. Viens, laisse-moi te
+      montrer la danse enchanteresse de mes compagnons."
+    - C'est un spectacle que tu n'oublieras pas !
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"
@@ -23957,126 +23970,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -7, y: 54, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -6, y: 54, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -5, y: 54, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -1, y: 54, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 0, y: 54, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 1, y: 54, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -7, y: 55, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -6, y: 55, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 0, y: 55, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 1, y: 55, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -7, y: 56, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 1, y: 56, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 0
@@ -24093,7 +23986,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 267
     m_Data: {fileID: 11400000, guid: a33e9ddba514c90469a4ffe219af54c8, type: 2}
-  - m_RefCount: 259
+  - m_RefCount: 247
     m_Data: {fileID: 11400000, guid: 75a8dad1ea727854483be8d0f79ba11c, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: f004e5c32aad2b844a69e123a5cc1405, type: 2}
@@ -24116,7 +24009,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 259
+  - m_RefCount: 247
     m_Data: {fileID: -4116040823106012581, guid: 6092738183c668a4d924383acaf9eb5f, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 2815510966112240897, guid: 6092738183c668a4d924383acaf9eb5f, type: 3}
@@ -24125,7 +24018,7 @@ Tilemap:
   - m_RefCount: 833
     m_Data: {fileID: -6017339223957375553, guid: 6092738183c668a4d924383acaf9eb5f, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 1360
+  - m_RefCount: 1348
     m_Data:
       e00: 1
       e01: 0
@@ -24144,7 +24037,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 1360
+  - m_RefCount: 1348
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 4.7117e-41, g: 4.7117e-41, b: 4.7117e-41, a: 4.7117e-41}

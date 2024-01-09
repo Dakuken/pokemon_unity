@@ -250,9 +250,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokemons:
   - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+    level: 6
   - _base: {fileID: 11400000, guid: 05420a1f22a73904596e7db8a9606ab1, type: 2}
-    level: 5
+    level: 7
 --- !u!114 &633259262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,12 +265,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: Nageur
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - J'aime l'eau
+    - Tu veux nager avec moi ?
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"
@@ -10814,8 +10814,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 945643d5354dc6b4b98436c717b855e2, type: 2}
+    level: 8
 --- !u!114 &1991146795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10828,12 +10828,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: Beau gosse
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - Au combat !!
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"

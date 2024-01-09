@@ -159,8 +159,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: cdb22750a92176444959aadf4e9f0bf6, type: 2}
+    level: 9
 --- !u!114 &83898806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,12 +173,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: Arroseur
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - Je cherche des plantes
+    - "\xE0 arroser"
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"
@@ -2021,8 +2021,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 80b1eefbe49221e43bca5508403a4468, type: 2}
+    level: 8
+  - _base: {fileID: 11400000, guid: 07f9c872d14c30645aa122cb9d93d715, type: 2}
+    level: 9
 --- !u!114 &199863520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30997,8 +30999,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 90529f792adb5cf48a7d99b35d4e4830, type: 2}
+    level: 10
 --- !u!114 &1693620536
 MonoBehaviour:
   m_ObjectHideFlags: 0

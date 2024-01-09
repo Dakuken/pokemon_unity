@@ -8136,8 +8136,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 8f026db1f6529eb4babe02d8eb5f2191, type: 2}
+    level: 30
+  - _base: {fileID: 11400000, guid: 8751058a9af228345a56519b1daff24c, type: 2}
+    level: 30
+  - _base: {fileID: 11400000, guid: 9a7770c832d10cd49a0d160ac9fb2ba5, type: 2}
+    level: 30
+  - _base: {fileID: 11400000, guid: 166cc38362f0f2240b168f6e98960c38, type: 2}
+    level: 30
+  - _base: {fileID: 11400000, guid: 2e43d3300c8fdfd409d5f963c1e2fe08, type: 2}
+    level: 30
 --- !u!114 &2114274807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8150,12 +8158,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cc7d91f7663240b9642ec40f39640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: PATRON ?
+  name: Justin
   sprite: {fileID: 21300000, guid: 6311d8ceeadb4b449acacc1237bfb4cc, type: 3}
   dialog:
     lines:
-    - 'Chef chef '
-    - CHEFFFF !
+    - Oh doudou vient la
   dialogAfterBattle:
     lines:
     - "Tu m'as bien bousill\xE9"

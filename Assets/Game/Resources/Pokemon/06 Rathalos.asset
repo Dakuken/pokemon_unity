@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
   m_Name: 06 Rathalos
   m_EditorClassIdentifier: 
-  name: Rathalos
+  name: Charking
   description: 
   sprite: {fileID: 21300000, guid: ba408431859b80546a621402974237d0, type: 3}
   type1: 2

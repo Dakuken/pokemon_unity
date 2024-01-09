@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
   m_Name: 05 Saloflame
   m_EditorClassIdentifier: 
-  name: Saloflame
+  name: Charchomp
   description: 
   sprite: {fileID: 21300000, guid: ae0154a827327724d8fdd16d74b48c19, type: 3}
   type1: 2

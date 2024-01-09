@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
   m_Name: 02 Cretopousse
   m_EditorClassIdentifier: 
-  name: Cretopousse
+  name: Groleef
   description: 
   sprite: {fileID: 21300000, guid: be4e5f556c226a340b20385f1211d751, type: 3}
   type1: 5
