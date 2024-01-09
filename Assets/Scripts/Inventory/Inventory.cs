@@ -4,6 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+public enum ItemCategory
+{
+    Items,
+    Pokeballs
+}
+
 public class Inventory : MonoBehaviour
 {
 
@@ -33,25 +39,29 @@ public class Inventory : MonoBehaviour
         return allSlots[category];
     }
     
-    public ItemBase UseItem(int indexItem, Pokemon selectedPokemon)
+    public ItemBase UseItem(int indexItem, Pokemon selectedPokemon, int selectedCategory)
     {
-        var item = slots[indexItem].Item;
+        var currentSlots = GetSlotsByCategory(selectedCategory);
+        
+        var item = currentSlots[indexItem].Item;
         bool itemUsed = item.Use(selectedPokemon);
         if (itemUsed)
         {
-            RemoveItem(item);
+            RemoveItem(item, selectedCategory);
             return item;
         }
         
         return null;
     }
     
-    public void RemoveItem(ItemBase item)
+    public void RemoveItem(ItemBase item, int category )
     {
-        var itemslot = slots.First(x => x.Item == item);
+        var currentSlots = GetSlotsByCategory(category);
+        
+        var itemslot = currentSlots.First(x => x.Item == item);
         itemslot.Count--;
         if(itemslot.Count == 0)
-            slots.Remove(itemslot);
+            currentSlots.Remove(itemslot);
         
         OnUpdated?.Invoke();
     }

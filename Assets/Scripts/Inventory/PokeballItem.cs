@@ -5,10 +5,16 @@ using UnityEngine;
 [CreateAssetMenu( menuName = "Items/Create new pokeball item")]
 public class PokeballItem : ItemBase
 {
+    [SerializeField] float catchRate = 1;
     
     public override bool Use(Pokemon pokemon)
     {
-       return true;
+        if(GameController.Instance.State != GameState.Battle)
+            return false;
+        
+        return true;
     }
+    
+    public float CatchRate { get => catchRate; }
    
 }

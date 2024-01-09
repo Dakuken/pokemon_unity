@@ -20,7 +20,7 @@ public class InventoryUI : MonoBehaviour
     
     [SerializeField] PartyScreen partyScreen;
     
-    Action onItemUsed;
+    Action<ItemBase> onItemUsed;
     
     Inventory inventory;
     int selectedItem = 0;
@@ -66,7 +66,7 @@ public class InventoryUI : MonoBehaviour
         UpdateItemSelection();
     }
 
-    public void HandleUpdate(Action onBack, Action onItemUsed=null)
+    public void HandleUpdate(Action onBack, Action<ItemBase> onItemUsed=null)
     {
         this.onItemUsed = onItemUsed;
         
@@ -101,7 +101,7 @@ public class InventoryUI : MonoBehaviour
                 UpdateItemSelection();
 
             if (Input.GetKeyDown(KeyCode.Z))
-                OpenPartyScreen();
+                ItemSelected();
             else if (Input.GetKeyDown(KeyCode.X))
             {
                 onBack?.Invoke();
@@ -120,15 +120,29 @@ public class InventoryUI : MonoBehaviour
         }
     }
 
+    void ItemSelected()
+    {
+        if (selectedCategory == (int)ItemCategory.Pokeballs)
+        {
+            StartCoroutine(UseItem());
+        }
+        else
+        {
+            OpenPartyScreen();
+        }
+    }
+
     IEnumerator UseItem()
     {
         state = InventoryUIState.Busy;
         
-        var usedItem = inventory.UseItem(selectedItem, partyScreen.SelectedMember);
+        var usedItem = inventory.UseItem(selectedItem, partyScreen.SelectedMember, selectedCategory);
         if (usedItem != null)
         {
-            yield return DialogManager.Instance.ShowDialogText($"The player used {usedItem.ItemName}");
-            onItemUsed?.Invoke();
+            if(!(usedItem is PokeballItem)){
+                yield return DialogManager.Instance.ShowDialogText($"The player used {usedItem.ItemName}");
+            }
+            onItemUsed?.Invoke(usedItem);
         }
         else
         {
@@ -142,6 +156,8 @@ public class InventoryUI : MonoBehaviour
     {
         var slots = inventory.GetSlotsByCategory(selectedCategory);
         
+        selectedItem = Mathf.Clamp(selectedItem, 0, slots.Count - 1);
+        
         for (int i = 0; i < slotUIList.Count; ++i)
         {
             if (i == selectedItem)
@@ -150,7 +166,6 @@ public class InventoryUI : MonoBehaviour
                 slotUIList[i].NameText.color = Color.black;
         }
         
-        selectedItem = Mathf.Clamp(selectedItem, 0, slots.Count - 1);
 
         if (slots.Count > 0)
         {

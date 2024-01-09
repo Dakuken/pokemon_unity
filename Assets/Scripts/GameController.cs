@@ -17,6 +17,12 @@ public class GameController : MonoBehaviour
    
    GameState stateBeforePause;
    
+   public GameState State
+   {
+      get => state;
+      set => state = value;
+   }
+   
    public SceneDetails currentScene { get; private set; }
    
    public SceneDetails previousScene { get; private set; }
