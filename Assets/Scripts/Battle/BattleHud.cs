@@ -42,6 +42,7 @@ public class BattleHud : MonoBehaviour
         
         SetStatusText();
         _pokemon.OnStatusChanged += SetStatusText;
+        _pokemon.OnHpChanged += UpdateHp;
     }
     
     void SetStatusText()
@@ -92,13 +93,26 @@ public class BattleHud : MonoBehaviour
         return Mathf.Clamp01(normalizedExp);
     }
 
-    public IEnumerator UpdateHP()
+    public void UpdateHp()
     {
-        if (_pokemon.HpChanged)
-        { 
-            yield return hpBar.SetHPSmooth((float)_pokemon.HP / _pokemon.MaxHp);
-            _pokemon.HpChanged = false;
+        StartCoroutine(UpdateHpAsync());
+    }
+    
+    public IEnumerator UpdateHpAsync()
+    {
+        yield return hpBar.SetHPSmooth((float)_pokemon.HP / _pokemon.MaxHp);
+    }
+    
+    public IEnumerator WaitForHpUpdate()
+    {
+        yield return new WaitUntil(() => !hpBar.IsUpdating);
+    }
+
+    public void ClearData()
+    {
+        if(_pokemon != null){
+            _pokemon.OnStatusChanged -= SetStatusText;
+            _pokemon.OnHpChanged -= UpdateHp;
         }
-        
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Linq;
 
 public class PlayerController : MonoBehaviour, ISavable
 {
@@ -62,14 +63,22 @@ public class PlayerController : MonoBehaviour, ISavable
     
     public object CaptureState()
     {
-        float[] position = new float[] {transform.position.x, transform.position.y};
-        return position;
+        var saveData = new PlayerSaveData{
+            position = new float[] {transform.position.x, transform.position.y},
+            pokemons = GetComponent<PokemonParty>().Pokemons.Select(p => p.GetSaveData()).ToList()
+        };
+        
+        return saveData;
     }
 
     public void RestoreState(object state)
     {
-        var position = (float[]) state;
+        var saveData = (PlayerSaveData)state;
+        
+        var position = saveData.position;
         transform.position = new Vector3(position[0], position[1]);
+
+        GetComponent<PokemonParty>().Pokemons = saveData.pokemons.Select(s => new Pokemon(s)).ToList();
     }
     
     public string Name
@@ -86,6 +95,12 @@ public class PlayerController : MonoBehaviour, ISavable
     {
         get => character;
     }
-
     
+}
+
+[Serializable]
+public class PlayerSaveData
+{
+    public float[] position;
+    public List<PokemonSaveData> pokemons;
 }

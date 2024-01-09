@@ -41,8 +41,10 @@ public class Pokemon
     public int StatusTime { get; set; }
     public int VolatileStatusTime { get; set; }
     public Queue<string> StatusChanges { get; private set; }
-    public bool HpChanged { get; set; }
     public event System.Action OnStatusChanged; 
+    public event System.Action OnHpChanged; 
+
+    
 
     public void Init(){
         
@@ -65,6 +67,39 @@ public class Pokemon
         ResetStatBoost();
         Status = null;
         VolatileStatus = null;
+    }
+    
+    public Pokemon(PokemonSaveData saveData)
+    {
+        _base = PokemonDB.GetPokemonByName(saveData.name);
+        level = saveData.level;
+        Exp = saveData.exp;
+        HP = saveData.HP;
+        
+        if(saveData.status != null) 
+            Status = ConditionsDB.Conditions[saveData.status.Value];
+        else 
+            Status = null;
+        
+        Moves = saveData.moves.Select(s => new Move(s)).ToList();
+        
+        CalculateStats();
+        StatusChanges = new Queue<string>();
+        ResetStatBoost();
+        VolatileStatus = null;
+    }
+    
+    public PokemonSaveData GetSaveData(){
+        var saveData = new PokemonSaveData(){
+            name = Base.Name,
+            HP = HP,
+            level = level,
+            exp = Exp,
+            status = Status?.Id,
+            moves = Moves.Select(m => m.GetSaveData()).ToList(),
+        };
+        
+        return saveData;
     }
 
     void CalculateStats()
@@ -198,15 +233,21 @@ public class Pokemon
         float d = a * move.Base.Power * ((float)attack / defense);
         int damage = Mathf.FloorToInt(d * modifiers);
 
-        UpdateHp(damage);
+        DecreaseHp(damage);
         
         return damageDetails;
     }
     
-    public void UpdateHp(int damage)
+    public void DecreaseHp(int damage)
     {
         HP = Mathf.Clamp(HP - damage, 0, MaxHp);
-        HpChanged = true;
+        OnHpChanged?.Invoke();
+    }
+    
+    public void IncreaseHp(int amount)
+    {
+        HP = Mathf.Clamp(HP + amount, 0, MaxHp);
+        OnHpChanged?.Invoke();
     }
     
     public void SetStatus(ConditionID conditionId)
@@ -281,4 +322,15 @@ public class DamageDetails
     public float Critical { get; set; }
     
     public float TypeEffectiveness { get; set; }
+}
+
+[System.Serializable]
+public class PokemonSaveData
+{
+    public string name;
+    public int HP;
+    public int level;
+    public int exp;
+    public ConditionID? status;
+    public List<MoveSaveData> moves;
 }
