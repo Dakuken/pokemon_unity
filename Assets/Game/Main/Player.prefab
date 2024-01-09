@@ -34,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 3762382162792991169}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 0.8, z: 0}
+  m_LocalPosition: {x: 20, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -106,6 +106,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
+  - _base: {fileID: 11400000, guid: e038623e3bb392f4a8f4b8e908447068, type: 2}
+    level: 2
   - _base: {fileID: 11400000, guid: 6185847f8078fd840a6f926847740162, type: 2}
     level: 10
   - _base: {fileID: 11400000, guid: 721e77809dd04e142853aa85bad0e618, type: 2}

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
+  m_Name: 23 Lucale
+  m_EditorClassIdentifier: 
+  name: Lucalu
+  description: 
+  sprite: {fileID: 21300000, guid: 452669b465b7d2145a6fd0126ea6758d, type: 3}
+  type1: 7
+  type2: 0
+  maxHp: 60
+  attack: 83
+  defense: 50
+  spAttack: 88
+  spDefense: 60
+  speed: 70
+  expYield: 0
+  growthRate: 1
+  catchRate: 200
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: e55710fdbb6e2ac4b89fc79ea1234a46, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: fabaf9a2d4b5d2740b7153158a168409, type: 2}
+    level: 1

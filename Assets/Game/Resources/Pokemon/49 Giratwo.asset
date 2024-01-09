@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
+  m_Name: 49 Giratwo
+  m_EditorClassIdentifier: 
+  name: Giratwo
+  description: 
+  sprite: {fileID: 21300000, guid: 5454a2a086bce6d45a72e226530429ae, type: 3}
+  type1: 14
+  type2: 11
+  maxHp: 135
+  attack: 90
+  defense: 100
+  spAttack: 130
+  spDefense: 110
+  speed: 116
+  expYield: 100
+  growthRate: 1
+  catchRate: 40
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 55b877f68e7485a4d8de35aee4287f89, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: 1a7df4689c4eb714fa9fd725a64d2d2d, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: a9b8e4c902c0bfd4db5d7dba40a2d210, type: 2}
+    level: 2

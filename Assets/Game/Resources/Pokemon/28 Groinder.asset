@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
+  m_Name: 28 Groinder
+  m_EditorClassIdentifier: 
+  name: Groinder
+  description: 
+  sprite: {fileID: 21300000, guid: ec560a215db4d73468329947a64d4917, type: 3}
+  type1: 5
+  type2: 10
+  maxHp: 54
+  attack: 70
+  defense: 51
+  spAttack: 75
+  spDefense: 60
+  speed: 87
+  expYield: 25
+  growthRate: 1
+  catchRate: 175
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 5ba32aef3c64f1145811f9991ddb1764, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: ef78b2c532e5a324e8ba84490b2649f3, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: 5c089f19528b8084ca8063426c482ed3, type: 2}
+    level: 2

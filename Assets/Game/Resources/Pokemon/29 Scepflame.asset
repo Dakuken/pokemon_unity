@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
+  m_Name: 29 Scepflame
+  m_EditorClassIdentifier: 
+  name: Scepflame
+  description: 
+  sprite: {fileID: 21300000, guid: 901c5cade21748f4e974d8b8bd9a2911, type: 3}
+  type1: 5
+  type2: 10
+  maxHp: 72
+  attack: 82
+  defense: 69
+  spAttack: 94
+  spDefense: 79
+  speed: 124
+  expYield: 35
+  growthRate: 1
+  catchRate: 150
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 8462b38f651d3ee4eb50d5bb7163e065, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: 4990d1f7331a8314ab17e19d30038a73, type: 2}
+    level: 3
+  - moveBase: {fileID: 11400000, guid: 95a078f20c9f217438324e2f25041d90, type: 2}
+    level: 3
+  - moveBase: {fileID: 11400000, guid: 584db0387247b3b458605046cfe51a11, type: 2}
+    level: 4

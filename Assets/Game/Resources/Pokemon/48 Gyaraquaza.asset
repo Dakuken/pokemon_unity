@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
+  m_Name: 48 Gyaraquaza
+  m_EditorClassIdentifier: 
+  name: Gyaraquaza
+  description: 
+  sprite: {fileID: 21300000, guid: fa1f7e0d7dcde0c449c2d11b444910f4, type: 3}
+  type1: 3
+  type2: 10
+  maxHp: 98
+  attack: 141
+  defense: 86
+  spAttack: 90
+  spDefense: 96
+  speed: 90
+  expYield: 90
+  growthRate: 1
+  catchRate: 70
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 82bd29bf4012b6f43900455cefc1e69f, type: 2}
+    level: 3
+  - moveBase: {fileID: 11400000, guid: 64ba866c2e4a19e49af24fdd45b7be52, type: 2}
+    level: 4
+  - moveBase: {fileID: 11400000, guid: aeb9ccc205239454784f57007abd2820, type: 2}
+    level: 3
+  - moveBase: {fileID: 11400000, guid: 95a078f20c9f217438324e2f25041d90, type: 2}
+    level: 3
