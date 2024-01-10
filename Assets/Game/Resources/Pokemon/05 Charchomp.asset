@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
-  m_Name: 05 Saloflame
+  m_Name: 05 Charchomp
   m_EditorClassIdentifier: 
   name: Charchomp
   description: 
@@ -28,10 +28,13 @@ MonoBehaviour:
   catchRate: 0
   learnableMoves:
   - moveBase: {fileID: 11400000, guid: 76d95658a02ee0f41a37402f9bc2a6a4, type: 2}
-    level: 2
+    level: 6
   - moveBase: {fileID: 11400000, guid: 243bb8f485708064eb48dd68b8e3054b, type: 2}
-    level: 2
+    level: 6
   - moveBase: {fileID: 11400000, guid: b9e1eba0ccafae34e9dbea5af3fafce3, type: 2}
-    level: 2
+    level: 6
   - moveBase: {fileID: 11400000, guid: 7bdc28b8a9c35b14098478f3b975c5f9, type: 2}
-    level: 2
+    level: 6
+  evolutions:
+  - evolvesInto: {fileID: 11400000, guid: 91325d473427a614995286a7cb536a60, type: 2}
+    requiredLevel: 7

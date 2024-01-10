@@ -10,28 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
-  m_Name: 03 Tortibranche
+  m_Name: 02 Groleef
   m_EditorClassIdentifier: 
-  name: Toritar
+  name: Groleef
   description: 
-  sprite: {fileID: 21300000, guid: 19ba23dd5a112624ca65839f85566bb2, type: 3}
+  sprite: {fileID: 21300000, guid: be4e5f556c226a340b20385f1211d751, type: 3}
   type1: 5
-  type2: 16
-  maxHp: 96
-  attack: 125
-  defense: 108
-  spAttack: 81
-  spDefense: 90
-  speed: 59
+  type2: 0
+  maxHp: 70
+  attack: 71
+  defense: 81
+  spAttack: 57
+  spDefense: 70
+  speed: 52
   expYield: 0
   growthRate: 1
   catchRate: 0
   learnableMoves:
   - moveBase: {fileID: 11400000, guid: 8462b38f651d3ee4eb50d5bb7163e065, type: 2}
     level: 2
-  - moveBase: {fileID: 11400000, guid: 4990d1f7331a8314ab17e19d30038a73, type: 2}
-    level: 3
-  - moveBase: {fileID: 11400000, guid: c326b604e41493f4ca925c07a633b559, type: 2}
-    level: 3
-  - moveBase: {fileID: 11400000, guid: 239a05781a5f33544bb18a74c30c2fc8, type: 2}
-    level: 3
+  - moveBase: {fileID: 11400000, guid: ef78b2c532e5a324e8ba84490b2649f3, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: 31e5385e3269b584aafe9df247705da7, type: 2}
+    level: 2

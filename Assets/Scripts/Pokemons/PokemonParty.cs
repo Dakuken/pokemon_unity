@@ -51,8 +51,21 @@ public class PokemonParty : MonoBehaviour
             //TODO: PC
         }
     }
-    
-    public static PokemonParty GetPlayerParty()
+
+
+    public IEnumerator CheckForEvolutions()
+    {
+        foreach (var pokemon in pokemons)
+        {
+            var evolution = pokemon.CheckForEvolution();
+            if (evolution != null)
+            {
+                yield return EvolutionManager.i.Evolve(pokemon, evolution);
+            }
+        }
+        OnUpdated?.Invoke();
+    }
+     public static PokemonParty GetPlayerParty()
     {
         return FindObjectOfType<PlayerController>().GetComponent<PokemonParty>();
     }
