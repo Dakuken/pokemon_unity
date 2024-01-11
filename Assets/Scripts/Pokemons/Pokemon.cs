@@ -192,10 +192,34 @@ public class Pokemon
         return Base.Evolutions.FirstOrDefault(e => e.RequiredLevel <= level);
     }
 
+    public void UpdateMoves()
+    {
+        Moves.Clear();
+
+        foreach (var move in Base.LearnableMoves)
+        {
+            if (move.Level <= Level)
+            {
+                Moves.Add(new Move(move.Base));
+            }
+
+            if (Moves.Count >= PokemonBase.MaxNumOfMoves)
+            {
+                break;
+            }
+        }
+    }
     public void Evolve(Evolution evolution)
     {
         _base = evolution.EvolvesInto;
         CalculateStats();
+        UpdateMoves();
+    }
+
+    public void Heal()
+    {
+        HP = MaxHp;
+        OnHpChanged?.Invoke();
     }
     public int Attack{
         get { return GetStat(Stat.Attack);}

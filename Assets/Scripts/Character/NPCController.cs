@@ -14,10 +14,12 @@ public class NPCController : MonoBehaviour, Interactable
     int currentPattern = 0;
     
     Character character;
+    Healer healer;
 
     private void Awake()
     {
        character = GetComponent<Character>();
+       healer = GetComponent<Healer>();
     }
     
     public void Interact(Transform initiator)
