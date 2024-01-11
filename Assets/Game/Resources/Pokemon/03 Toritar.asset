@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
-  m_Name: 03 Tortibranche
+  m_Name: 03 Toritar
   m_EditorClassIdentifier: 
   name: Toritar
   description: 
@@ -23,7 +23,7 @@ MonoBehaviour:
   spAttack: 81
   spDefense: 90
   speed: 59
-  expYield: 0
+  expYield: 60
   growthRate: 1
   catchRate: 0
   learnableMoves:
@@ -35,3 +35,4 @@ MonoBehaviour:
     level: 3
   - moveBase: {fileID: 11400000, guid: 239a05781a5f33544bb18a74c30c2fc8, type: 2}
     level: 3
+  evolutions: []

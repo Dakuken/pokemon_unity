@@ -220,15 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b47cec7e958a14d80a6469b294d4d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wildPokemons:
-  - _base: {fileID: 11400000, guid: fc1bee438957ce34db5a9504213978af, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 6185847f8078fd840a6f926847740162, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: ffeab3a5486de9046b0d2dca74012b90, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 227dcf9b967ab2d47ba28c4400361013, type: 2}
-    level: 10
+  wildPokemons: []
 --- !u!114 &263606541 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -570,14 +562,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: fc1bee438957ce34db5a9504213978af, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 6185847f8078fd840a6f926847740162, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: ffeab3a5486de9046b0d2dca74012b90, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 227dcf9b967ab2d47ba28c4400361013, type: 2}
-    level: 10
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
 --- !u!114 &521079071 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -655,7 +647,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: d078ad20e2087f8448e739678ab29e73, type: 3}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[0]
@@ -664,7 +656,7 @@ PrefabInstance:
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[1]
       value: 
-      objectReference: {fileID: 530957922}
+      objectReference: {fileID: 1444169007}
     - target: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
       propertyPath: connectedScenes.Array.data[2]
       value: 
@@ -696,11 +688,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wildPokemons:
   - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 4
-  - _base: {fileID: 11400000, guid: 05420a1f22a73904596e7db8a9606ab1, type: 2}
     level: 5
+  - _base: {fileID: 11400000, guid: 05420a1f22a73904596e7db8a9606ab1, type: 2}
+    level: 4
   - _base: {fileID: 11400000, guid: 945643d5354dc6b4b98436c717b855e2, type: 2}
-    level: 6
+    level: 3
 --- !u!114 &530957922 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -1775,6 +1767,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6528060241121607366, guid: b0d32364e2b8d164a8a0d0ae5a72093a, type: 3}
+      propertyPath: pokemons.Array.data[0]._base
+      value: 
+      objectReference: {fileID: 11400000, guid: ca571054db681dc4482b57b24471e6da, type: 2}
+    - target: {fileID: 6528060241121607366, guid: b0d32364e2b8d164a8a0d0ae5a72093a, type: 3}
+      propertyPath: pokemons.Array.data[0].level
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6853016229518202425, guid: b0d32364e2b8d164a8a0d0ae5a72093a, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.000010356307
@@ -2508,14 +2508,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: fc1bee438957ce34db5a9504213978af, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 6185847f8078fd840a6f926847740162, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: ffeab3a5486de9046b0d2dca74012b90, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 227dcf9b967ab2d47ba28c4400361013, type: 2}
-    level: 10
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
 --- !u!114 &865274611 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -2745,9 +2745,11 @@ MonoBehaviour:
   - _base: {fileID: 11400000, guid: 9a7770c832d10cd49a0d160ac9fb2ba5, type: 2}
     level: 20
   - _base: {fileID: 11400000, guid: bff0ea9c23674b6449b7d7e51162a3eb, type: 2}
-    level: 18
-  - _base: {fileID: 11400000, guid: bff0ea9c23674b6449b7d7e51162a3eb, type: 2}
-    level: 18
+    level: 16
+  - _base: {fileID: 11400000, guid: b2faaed855b3cec40902586a61782dbc, type: 2}
+    level: 16
+  - _base: {fileID: 11400000, guid: 10a700b70f6d23846822de2fdbc9421e, type: 2}
+    level: 16
 --- !u!114 &1170237565 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -3074,14 +3076,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: fc1bee438957ce34db5a9504213978af, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 6185847f8078fd840a6f926847740162, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: ffeab3a5486de9046b0d2dca74012b90, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 227dcf9b967ab2d47ba28c4400361013, type: 2}
-    level: 10
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
 --- !u!114 &1553284518 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -3191,14 +3193,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: fc1bee438957ce34db5a9504213978af, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 6185847f8078fd840a6f926847740162, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: ffeab3a5486de9046b0d2dca74012b90, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 227dcf9b967ab2d47ba28c4400361013, type: 2}
-    level: 10
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
 --- !u!114 &1577427319 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -3312,14 +3314,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: fc1bee438957ce34db5a9504213978af, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 6185847f8078fd840a6f926847740162, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: ffeab3a5486de9046b0d2dca74012b90, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 227dcf9b967ab2d47ba28c4400361013, type: 2}
-    level: 10
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
 --- !u!114 &1602553476 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -3429,14 +3431,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: fc1bee438957ce34db5a9504213978af, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 6185847f8078fd840a6f926847740162, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: ffeab3a5486de9046b0d2dca74012b90, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 227dcf9b967ab2d47ba28c4400361013, type: 2}
-    level: 10
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
 --- !u!114 &1995419268 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -3546,14 +3548,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: fc1bee438957ce34db5a9504213978af, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 6185847f8078fd840a6f926847740162, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: ffeab3a5486de9046b0d2dca74012b90, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 227dcf9b967ab2d47ba28c4400361013, type: 2}
-    level: 10
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
+  - _base: {fileID: 0}
+    level: 0
 --- !u!114 &2003437036 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
