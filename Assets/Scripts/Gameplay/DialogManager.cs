@@ -19,11 +19,11 @@ public class DialogManager : MonoBehaviour
         Instance = this;
     }
     
-    Dialog dialog;
+    /*Dialog dialog;
     Action onDialogFinished;
     
     int currentLine = 0;
-    bool isTyping;
+    bool isTyping;*/
     
     public bool IsShowing { get; private set; }
 
@@ -42,7 +42,7 @@ public class DialogManager : MonoBehaviour
         IsShowing = false;
     }
     
-    public IEnumerator ShowDialog(Dialog dialog, Action onFinished = null)
+    public IEnumerator ShowDialog(Dialog dialog)
     {
         yield return new WaitForEndOfFrame();
         
@@ -51,28 +51,40 @@ public class DialogManager : MonoBehaviour
         AudioManager.i.PlaySFX(AudioId.UISelect);
         
         IsShowing = true;
-        this.dialog = dialog;
-        onDialogFinished = onFinished;
+        
+        /*this.dialog = dialog;
+        onDialogFinished = onFinished;*/
         
         dialogBox.SetActive(true);
-        StartCoroutine(TypeDialog(dialog.Lines[0]));
+
+        foreach (var line in dialog.Lines)
+        {
+           yield return TypeDialog(line);
+           yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Z));
+        }
+        dialogBox.SetActive(false);
+        IsShowing = false;
+        OnCloseDialog?.Invoke();
+
+        //StartCoroutine(TypeDialog(dialog.Lines[0]));
     }
     
     public IEnumerator TypeDialog(string line)
     {
-        isTyping = true;
+        //isTyping = true;
         dialogText.text = "";
         foreach (var letter in line.ToCharArray())
         {
             dialogText.text += letter;
             yield return new WaitForSeconds(1f/ lettersPerSecond);
         }
-        isTyping = false;
+        //isTyping = false;
     }
     
     public void HandleUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !isTyping)
+        
+       /* if (Input.GetKeyDown(KeyCode.Z) && !isTyping)
         {
             ++currentLine;
             if (currentLine < dialog.Lines.Count)
@@ -87,6 +99,6 @@ public class DialogManager : MonoBehaviour
                 onDialogFinished?.Invoke();
                 OnCloseDialog?.Invoke();
             }
-        }
+        }*/
     }
 }
