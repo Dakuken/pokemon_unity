@@ -7,7 +7,7 @@ public class Pokeball : MonoBehaviour, Interactable
     [SerializeField] ItemBase item;
 
     public bool Used { get; set; } = false;
-    public void Interact(Transform initiator)
+    public IEnumerator Interact(Transform initiator)
     {
         if (!Used)
         {
@@ -16,8 +16,8 @@ public class Pokeball : MonoBehaviour, Interactable
             GetComponent<SpriteRenderer>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
             
-            DialogManager.Instance.ShowDialogText($"Vous avez trouver {item.name}");
+            yield return DialogManager.Instance.ShowDialogText($"Vous avez trouver {item.name}");
         }
-        
+        //yield return DialogManager.Instance.ShowDialogText("pick up is working");
     }
 }

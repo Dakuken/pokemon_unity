@@ -22,17 +22,18 @@ public class NPCController : MonoBehaviour, Interactable
        healer = GetComponent<Healer>();
     }
     
-    public void Interact(Transform initiator)
+    public IEnumerator Interact(Transform initiator)
     {
         if (state == NPCState.Idle)
         {
             state = NPCState.Dialog;
             character.LookTowards(initiator.position);
+
+            yield return DialogManager.Instance.ShowDialog(dialog);
             
-            StartCoroutine(DialogManager.Instance.ShowDialog(dialog, (() => {
-                idleTimer = 0f;
-                state = NPCState.Idle;
-            })));
+            idleTimer = 0f;
+            state = NPCState.Idle;
+           
         }
     }
 
