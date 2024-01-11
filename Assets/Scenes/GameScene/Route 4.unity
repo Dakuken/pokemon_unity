@@ -444,6 +444,7 @@ MonoBehaviour:
     - C'est ciao comme disais l'autre
   exclamation: {fileID: 218731172}
   fov: {fileID: 429448791}
+  trainerEncounterMusic: {fileID: 8300000, guid: 2713c544f91fdcb43a7862c49b0d96e5, type: 3}
 --- !u!114 &543204918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -887,6 +888,7 @@ MonoBehaviour:
     - C'est ciao comme disais l'autre
   exclamation: {fileID: 467951481}
   fov: {fileID: 663108951}
+  trainerEncounterMusic: {fileID: 8300000, guid: 2713c544f91fdcb43a7862c49b0d96e5, type: 3}
 --- !u!114 &787482188
 MonoBehaviour:
   m_ObjectHideFlags: 0
