@@ -10,8 +10,7 @@ public class PokemonBase : ScriptableObject
     [TextArea]
     [SerializeField] string description;
 
-    [SerializeField] Sprite frontSprite;
-    [SerializeField] Sprite backSprite;
+    [SerializeField] Sprite sprite;
 
     [SerializeField] PokemonType type1;
     [SerializeField] PokemonType type2;
@@ -23,7 +22,29 @@ public class PokemonBase : ScriptableObject
     [SerializeField] int spDefense;
     [SerializeField] int speed;
     
+    [SerializeField] int expYield;
+    [SerializeField] GrowthRate growthRate;
+    
+    [SerializeField] int catchRate = 255;
+    
     [SerializeField] List<LearnableMove> learnableMoves;
+
+    [SerializeField] List<Evolution> evolutions;
+    
+    public static int MaxNumOfMoves { get; set; } = 4;
+    
+    public int GetExpForLevel(int level){
+        if (growthRate == GrowthRate.Fast)
+        {
+            return 4 * (level * level * level) / 5;
+        }
+        else if(growthRate == GrowthRate.MediumFast)
+        {
+            return level * level * level;
+        }
+
+        return -1;
+    }
 
     public string Name{
         get { return name;}
@@ -33,12 +54,8 @@ public class PokemonBase : ScriptableObject
         get { return description;}
     }
 
-    public Sprite FrontSprite{
-        get { return frontSprite;}
-    }
-
-    public Sprite BackSprite{
-        get { return backSprite;}
+    public Sprite Sprite{
+        get { return sprite;}
     }
 
     public PokemonType Type1{
@@ -77,6 +94,18 @@ public class PokemonBase : ScriptableObject
         get { return learnableMoves;}
     }
 
+    public List<Evolution> Evolutions => evolutions;
+    public int CatchRate{
+        get { return catchRate;} 
+    }
+    
+    public int ExpYield{
+        get { return expYield;}
+    }
+    
+    public GrowthRate GrowthRate{
+        get { return growthRate;}
+    }
 }
 
 [System.Serializable]
@@ -93,6 +122,15 @@ public class LearnableMove
     public int Level{
         get { return level;}
     }
+}
+[System.Serializable]
+public class Evolution
+{
+    [SerializeField] private PokemonBase evolvesInto;
+    [SerializeField] int requiredLevel ;
+
+    public PokemonBase EvolvesInto => evolvesInto;
+    public int RequiredLevel => requiredLevel;
 }
 
 public enum PokemonType{
@@ -117,6 +155,11 @@ public enum PokemonType{
     Fairy
 }
 
+public enum GrowthRate{
+    Fast,
+    MediumFast,
+}
+
 public enum Stat
 {
     Attack,
@@ -124,6 +167,8 @@ public enum Stat
     SpAttack,
     SpDefense,
     Speed,
+    Accuracy,
+    Evasion
 }
 
 public class TypeChart

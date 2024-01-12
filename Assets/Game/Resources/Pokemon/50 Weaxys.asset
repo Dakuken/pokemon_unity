@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
+  m_Name: 50 Weaxys
+  m_EditorClassIdentifier: 
+  name: Weaxys
+  description: 
+  sprite: {fileID: 21300000, guid: 634fd8ac03f7f964a9699da7b6b2f925, type: 3}
+  type1: 16
+  type2: 11
+  maxHp: 100
+  attack: 140
+  defense: 55
+  spAttack: 90
+  spDefense: 73
+  speed: 141
+  expYield: 100
+  growthRate: 1
+  catchRate: 40
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: ce19d9a2145e8dc4fa027d9c2dcafa01, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: da3a8743413f42145a62acc7d67f33c4, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: c5a54481153a75e46af22248e1af344d, type: 2}
+    level: 2

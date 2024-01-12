@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa4fd188fd6c964cbe163153d2407ca, type: 3}
+  m_Name: 36 Jynchoke
+  m_EditorClassIdentifier: 
+  name: Jynchoke
+  description: "\t"
+  sprite: {fileID: 21300000, guid: 63fde92d3cdaadf43a972cd267f539c4, type: 3}
+  type1: 6
+  type2: 7
+  maxHp: 70
+  attack: 83
+  defense: 58
+  spAttack: 93
+  spDefense: 83
+  speed: 61
+  expYield: 40
+  growthRate: 1
+  catchRate: 170
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 771c1bc178d947745abc06c20c0f183e, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: ce7d0136c5845ed4493dc323e45ed32c, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: c06841e3b45c86f44add56a45715911f, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: 963520b7a5a66954691cac5debc73741, type: 2}
+    level: 2
+  evolutions:
+  - evolvesInto: {fileID: 11400000, guid: 1a0342c38d444ab418ad52fd0a7cb066, type: 2}
+    requiredLevel: 23

@@ -8,25 +8,36 @@ using UnityEngine.UI;
 public class BattleDialogBox : MonoBehaviour
 {
     [SerializeField] int lettersPerSecond;
-    [SerializeField] Color highlightedColor;
+    
     
     [SerializeField] Text dialogText;
     [SerializeField] GameObject actionSelector;
     [SerializeField] GameObject moveSelector;
     [SerializeField] GameObject moveDetails;
+    [SerializeField] GameObject choiceBox;
     
     [SerializeField] List<Text> actionTexts;
     [SerializeField] List<Text> moveTexts;
     
     [SerializeField] Text ppText;
     [SerializeField] Text typeText;
+    
+    [SerializeField] Text yesText;
+    [SerializeField] Text noText;
 
-    public void SetDialog(String dialog)
+    private Color highlightedColor;
+
+    private void Start()
+    {
+        highlightedColor = GlobalSettings.Instance.HighlightedColor;
+    }
+
+    public void SetDialog(string dialog)
     {
         dialogText.text = dialog;
     }
     
-    public IEnumerator TypeDialog(String dialog)
+    public IEnumerator TypeDialog(string dialog)
     {
         dialogText.text = "";
         foreach (var letter in dialog.ToCharArray())
@@ -52,6 +63,11 @@ public class BattleDialogBox : MonoBehaviour
     {
         moveSelector.SetActive(enabled);
         moveDetails.SetActive(enabled);
+    }
+    
+    public void EnableChoiceBox(bool enabled)
+    {
+        choiceBox.SetActive(enabled);
     }
     
     public void UpdateActionSelection(int selectedAction)
@@ -85,6 +101,11 @@ public class BattleDialogBox : MonoBehaviour
         
         ppText.text = $"PP {move.PP}/{move.Base.PP}";
         typeText.text = move.Base.Type.ToString();
+
+        if(move.PP == 0)
+            ppText.color = Color.red;
+        else
+            ppText.color = Color.black;
     }
 
     public void SetMoveNames(List<Move> moves)
@@ -96,6 +117,20 @@ public class BattleDialogBox : MonoBehaviour
             else{
                 moveTexts[i].text = "-";
             }
+        }
+    }
+    
+    public void UpdateChoiceBox(bool yesSelected)
+    {
+        if (yesSelected)
+        {
+            yesText.color = highlightedColor;
+            noText.color = Color.black;
+        }
+        else
+        {
+            yesText.color = Color.black;
+            noText.color = highlightedColor;
         }
     }
 }
