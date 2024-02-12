@@ -43,6 +43,7 @@ public class GameController : MonoBehaviour
       ConditionsDB.Init();
       PokemonDB.Init();
       MoveDB.Init();
+      ItemDB.Init();
    }
 
    private void Start()

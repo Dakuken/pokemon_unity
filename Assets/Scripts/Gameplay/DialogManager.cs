@@ -19,11 +19,6 @@ public class DialogManager : MonoBehaviour
         Instance = this;
     }
     
-    /*Dialog dialog;
-    Action onDialogFinished;
-    
-    int currentLine = 0;
-    bool isTyping;*/
     
     public bool IsShowing { get; private set; }
 
