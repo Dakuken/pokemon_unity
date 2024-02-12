@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Charge de feu
   description: Effectue une charge remplit de flamme
   type: 2
-  power: 500
+  power: 40
   accuracy: 100
   alwaysHits: 1
   pp: 40

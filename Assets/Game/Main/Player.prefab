@@ -106,12 +106,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemons:
-  - _base: {fileID: 11400000, guid: e038623e3bb392f4a8f4b8e908447068, type: 2}
-    level: 2
-  - _base: {fileID: 11400000, guid: 6185847f8078fd840a6f926847740162, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 721e77809dd04e142853aa85bad0e618, type: 2}
-    level: 10
+  - _base: {fileID: 11400000, guid: ca571054db681dc4482b57b24471e6da, type: 2}
+    level: 5
 --- !u!114 &541444415194126821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,20 +267,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slots:
   - item: {fileID: 11400000, guid: 748d1725fc8b5a541955bcd5625275c0, type: 2}
-    count: 10
+    count: 15
   - item: {fileID: 11400000, guid: fb00908937733f444bb79dfb747372b4, type: 2}
+    count: 10
+  - item: {fileID: 11400000, guid: 930dd3cf23a883b46a794015d7bdf72e, type: 2}
+    count: 5
+  - item: {fileID: 11400000, guid: 3e7bd411fa863b8458de1cc838a813b3, type: 2}
     count: 3
-  - item: {fileID: 11400000, guid: 930dd3cf23a883b46a794015d7bdf72e, type: 2}
-    count: 1
-  - item: {fileID: 11400000, guid: 930dd3cf23a883b46a794015d7bdf72e, type: 2}
-    count: 1
-  - item: {fileID: 11400000, guid: 930dd3cf23a883b46a794015d7bdf72e, type: 2}
+  - item: {fileID: 11400000, guid: e801d00f867434642ac71172ff4e94d0, type: 2}
     count: 1
   pokeballSlots:
   - item: {fileID: 11400000, guid: ff69bf763f1da3e49921a0ad137281ec, type: 2}
-    count: 10
+    count: 15
   - item: {fileID: 11400000, guid: 573a275deedc2004481dc83d32ca1efd, type: 2}
-    count: 3
+    count: 10
 --- !u!1 &4724266523856719882
 GameObject:
   m_ObjectHideFlags: 0
