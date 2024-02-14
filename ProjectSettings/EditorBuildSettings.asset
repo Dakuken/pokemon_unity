@@ -65,4 +65,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene/Salle 4 league.unity
     guid: 2ee3e37eec8d7cf42863350fc48d7297
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 3b65e579e90fcec4eb091c3153170160
   m_configObjects: {}
