@@ -6,22 +6,33 @@ using UnityEngine;
 public class NPCController : MonoBehaviour, Interactable
 {
     [SerializeField] Dialog dialog;
+    
+    [Header("Quests")]
+    [SerializeField] QuestBase questToStart;
+    [SerializeField] QuestBase questToComplete;
+    
+    [Header("Movement")]
     [SerializeField] List<Vector2> movementPattern;
     [SerializeField] float timeBetweenPatterns;
     
     NPCState state = NPCState.Idle;
     float idleTimer = 0f;
     int currentPattern = 0;
+    Quest activeQuest;
     
     Character character;
     Healer healer;
     ItemGiver itemGiver;
+    PokemonGiver pokemonGiver;
+    Merchant merchant;
 
     private void Awake()
     {
        character = GetComponent<Character>();
        healer = GetComponent<Healer>();
        itemGiver = GetComponent<ItemGiver>();
+       pokemonGiver = GetComponent<PokemonGiver>();
+       merchant = GetComponent<Merchant>();
     }
     
     public IEnumerator Interact(Transform initiator)
@@ -30,9 +41,54 @@ public class NPCController : MonoBehaviour, Interactable
         {
             state = NPCState.Dialog;
             character.LookTowards(initiator.position);
+            
+            if (questToComplete != null)
+            {
+                var quest = new Quest(questToComplete);
+                yield return quest.CompleteQuest(initiator);
+                questToComplete = null;
+
+                Debug.Log($"{quest.Base.Name} accomplit");
+            }
             if (itemGiver != null && itemGiver.CanBeGiven())
             {
                 yield return itemGiver.GiveItem(initiator.GetComponent<PlayerController>());
+            }
+            else if (pokemonGiver != null && pokemonGiver.CanBeGiven())
+            {
+                yield return pokemonGiver.GivePokemon(initiator.GetComponent<PlayerController>());
+            }
+            else if (questToStart != null)
+            {
+                activeQuest= new Quest(questToStart);
+                yield return activeQuest.StartQuest();
+                questToStart = null;
+                
+                if (activeQuest.CanBeCompleted())
+                {
+                    yield return activeQuest.CompleteQuest(initiator);
+                    activeQuest = null;
+                }
+            }
+            else if(activeQuest != null)
+            {
+                if (activeQuest.CanBeCompleted())
+                {
+                    yield return activeQuest.CompleteQuest(initiator);
+                    activeQuest = null;
+                }
+                else
+                {
+                    yield return DialogManager.Instance.ShowDialog(activeQuest.Base.InProgressDialogue);
+                }
+            }
+            else if (healer != null)
+            {
+                yield return healer.Heal(initiator, dialog);
+            }
+            else if (merchant != null)
+            {
+               yield return merchant.Trade();
             }
             else
             {

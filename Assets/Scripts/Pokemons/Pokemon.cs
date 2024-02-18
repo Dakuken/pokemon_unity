@@ -113,7 +113,9 @@ public class Pokemon
 
         int oldMaxHp = MaxHp;
         MaxHp = Mathf.FloorToInt((Base.MaxHp * Level) / 100f) + 10 + Level;
-        HP += MaxHp - oldMaxHp;
+        
+        if(oldMaxHp != 0)
+            HP += MaxHp - oldMaxHp;
     }
     
 
@@ -220,6 +222,17 @@ public class Pokemon
     {
         HP = MaxHp;
         OnHpChanged?.Invoke();
+        
+        CureStatus();
+    }
+    
+    public float GetNormalizedExp()
+    {
+        int currentLevelExp = Base.GetExpForLevel(Level);
+        int nextLevelExp = Base.GetExpForLevel(Level + 1);
+        
+        float normalizedExp = (float)(Exp - currentLevelExp) / (nextLevelExp - currentLevelExp);
+        return Mathf.Clamp01(normalizedExp);
     }
     public int Attack{
         get { return GetStat(Stat.Attack);}

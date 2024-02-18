@@ -9,4 +9,5 @@ public class TrainerFov : MonoBehaviour, IPlayerTriggerable
         player.Character.Animator.IsMoving = false;
         GameController.Instance.OnEnterTrainerView(GetComponentInParent<TrainerController>());
     }
+    public bool TriggerRepeatedly => false; 
 }

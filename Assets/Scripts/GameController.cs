@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameState { FreeRoam, Battle, Dialog, Cutscene, Paused, Menu, PartyScreen, Bag, Evolution }
+public enum GameState { FreeRoam, Battle, Dialog, Cutscene, Paused, Menu, PartyScreen, Bag, Evolution,Shop }
 
 public class GameController : MonoBehaviour
 {
@@ -14,8 +14,8 @@ public class GameController : MonoBehaviour
    [SerializeField] InventoryUI inventoryUI;
    
    GameState state;
-   
    GameState stateBeforePause;
+   GameState StateBeforeEvolution;
    
    public GameState State
    {
@@ -24,12 +24,11 @@ public class GameController : MonoBehaviour
    }
    
    public SceneDetails currentScene { get; private set; }
-   
    public SceneDetails previousScene { get; private set; }
    
-   public static GameController Instance { get; private set; }
-   
    MenuController menuController;
+   
+   public static GameController Instance { get; private set; }
 
    private void Awake()
    {
@@ -65,10 +64,21 @@ public class GameController : MonoBehaviour
       
       menuController.onMenuSelected += OnMenuSelected;
 
-      EvolutionManager.i.OnStartEvolution += () => state = GameState.Evolution;
-      EvolutionManager.i.OnCompleteEvolution += () => state = GameState.FreeRoam;
+      EvolutionManager.i.OnStartEvolution += () =>
+      {
+         StateBeforeEvolution = state;
+         state = GameState.Evolution;
+      };
+      EvolutionManager.i.OnCompleteEvolution += () =>
+      {
+         state = stateBeforePause;
+      };
+
+      ShopController.i.OnStart += () => state = GameState.Shop;
+      ShopController.i.OnFinish += () => state = GameState.FreeRoam;
    }
 
+   
   
 
    public void PausedGame(bool pause){
@@ -185,7 +195,10 @@ public class GameController : MonoBehaviour
          
          inventoryUI.HandleUpdate(onBack);
       }
-
+      else if (state == GameState.Shop)
+      {
+         ShopController.i.HandleUpdate();
+      }
      
    }
    

@@ -48,7 +48,7 @@ public class Inventory : MonoBehaviour, ISavable
         bool itemUsed = item.Use(selectedPokemon);
         if (itemUsed)
         {
-            RemoveItem(item, selectedCategory);
+            RemoveItem(item);
             return item;
         }
         
@@ -75,8 +75,9 @@ public class Inventory : MonoBehaviour, ISavable
       }
       OnUpdated?.Invoke();
     }
-    public void RemoveItem(ItemBase item, int category )
+    public void RemoveItem(ItemBase item)
     {
+        int category = (int)GetCategoryFromItem(item);
         var currentSlots = GetSlotsByCategory(category);
         
         var itemslot = currentSlots.First(x => x.Item == item);
@@ -87,6 +88,12 @@ public class Inventory : MonoBehaviour, ISavable
         OnUpdated?.Invoke();
     }
 
+    public bool HasItem(ItemBase item)
+    {
+        int category = (int)GetCategoryFromItem(item);
+        var currentSlots = GetSlotsByCategory(category);
+        return currentSlots.Exists(slot => slot.Item == item);
+    }
     ItemCategory GetCategoryFromItem(ItemBase item)
     {
         if (item is RecoveryItem)
