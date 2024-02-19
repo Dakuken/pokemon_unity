@@ -25,55 +25,68 @@ public class MoveBase : ScriptableObject
     
     public string Name{
         get { return name; }
+        set { name = value; }
     }
     
     public string Description{
         get { return description; }
+        set { description = value; }
     }
     
     public PokemonType Type{
         get { return type; }
+        set { type = value; }
     }
     
     public int Power{
         get { return power; }
+        set { power = value; }
     }
     
     public int Accuracy{
         get { return accuracy; }
+        set { accuracy = value; }
     }
     
     public bool AlwaysHits{
         get { return alwaysHits; }
+        set { alwaysHits = value; }
     }
     
     public int PP{
         get { return pp; }
+        set { pp = value; }
     }
     
     public int Priority{
         get { return priority; }
+        set { priority = value; }
     }
     
     public MoveCategory Category
     {
         get { return category; }
+        set { category = value; }
     }
     
     public MoveEffects Effects{
         get { return effects; }
+        set { effects = value; }
     }
     
     public List<SecondariesEffects> Secondaries{
         get { return _secondaries; }
+        set { _secondaries = value; }
     }
     
     public MoveTarget Target{
         get { return target; }
+        set { target = value; }
     }
     
     public AudioClip Sound{
         get { return sound; }
+        set { sound = value; }
     }
     
 }
@@ -87,14 +100,17 @@ public class MoveEffects
     
     public List<StatBoost> Boosts{
         get { return boosts; }
+        set { boosts = value; }
     }
     
     public ConditionID Status{
         get { return status; }
+        set { status = value; }
     }
     
     public ConditionID VolatileStatus{
         get { return volatileStatus; }
+        set { volatileStatus = value; }
     }
 }
 
@@ -107,10 +123,12 @@ public class SecondariesEffects : MoveEffects
     
     public int Chance{
         get { return chance; }
+        set { chance = value; }
     }
     
     public MoveTarget Target{
         get { return target; }
+        set { target = value; }
     }
 }
 

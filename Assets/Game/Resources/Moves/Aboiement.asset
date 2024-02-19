@@ -27,3 +27,4 @@ MonoBehaviour:
     volatileStatus: 0
   _secondaries: []
   target: 0
+  sound: {fileID: 0}
