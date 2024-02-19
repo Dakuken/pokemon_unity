@@ -2103,6 +2103,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4688815347022484596, guid: b0d32364e2b8d164a8a0d0ae5a72093a, type: 3}
+      propertyPath: slots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4802012950607504597, guid: b0d32364e2b8d164a8a0d0ae5a72093a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

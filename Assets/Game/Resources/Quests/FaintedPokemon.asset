@@ -17,7 +17,7 @@ MonoBehaviour:
   startDialogue:
     lines:
     - "Mon pokemon est bless\xE9"
-    - "Peut tu me donn\xE9 une potion ? "
+    - "Peut tu me donn\xE9 une superPotion ? "
   inProgressDialogue:
     lines:
     - S'il te plait une potion
@@ -25,5 +25,5 @@ MonoBehaviour:
     lines:
     - Oh merci beaucoup !
     - "Tiens en \xE9change !"
-  requiredItem: {fileID: 11400000, guid: 748d1725fc8b5a541955bcd5625275c0, type: 2}
+  requiredItem: {fileID: 11400000, guid: fb00908937733f444bb79dfb747372b4, type: 2}
   rewardItem: {fileID: 11400000, guid: 930dd3cf23a883b46a794015d7bdf72e, type: 2}
