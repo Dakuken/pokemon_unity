@@ -13,8 +13,7 @@ public class LoginMenu : MonoBehaviour
     public TMP_InputField emailInputField;
     public TMP_InputField passwordInputField;
     public TextMeshProUGUI errorMessageText;
-
-    private List<PokemonBase> pokemonList = new List<PokemonBase>();
+   
     private bool connexionReussie = false;
     
     public void SeConnecter()
@@ -62,7 +61,7 @@ public class LoginMenu : MonoBehaviour
                     string token = response["token"].ToString();
                     Debug.Log("Connexion réussie.");
                     connexionReussie = true;
-                    StartCoroutine(FetchPokemon(token));
+                    yield return StartCoroutine(FetchPokemon(token));
                 }
                 else if (response.ContainsKey("message"))
                 {
@@ -164,7 +163,7 @@ public class LoginMenu : MonoBehaviour
                                 Dictionary<string, object> attaqueObjData = attaqueData["attaque"] as Dictionary<string, object>;
                                 if (attaqueObjData != null)
                                 {
-                                    MoveBase newAttaque = ScriptableObject.CreateInstance<MoveBase>();;
+                                    MoveBase newAttaque = ScriptableObject.CreateInstance<MoveBase>();
                                     newAttaque.Name = attaqueObjData["nom"].ToString();
                                     newAttaque.Power = int.Parse(attaqueObjData["puissance"].ToString());
                                     newAttaque.Accuracy = 100;
@@ -200,15 +199,9 @@ public class LoginMenu : MonoBehaviour
                             }
                         }
                         
-                        pokemonList.Add(newPokemon);
+                        PokemonManager.Instance.PokemonList.Add(newPokemon);
                     }
-
-                    Debug.Log("Pokémons récupérés : " + pokemonList.Count);
-                    //affiche les leaneables moves
-                    foreach (LearnableMove learnableMove in pokemonList[0].LearnableMoves)
-                    {
-                        Debug.Log(learnableMove.Base.Name);
-                    }
+                    
                 }
             }
         }

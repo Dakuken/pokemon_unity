@@ -108,7 +108,19 @@ public class GameController : MonoBehaviour
       worldCamera.gameObject.SetActive(false);
       
       var playerParty = playerController.GetComponent<PokemonParty>();
-      var wildPokemon = currentScene.GetComponent<MapArea>().GetRandomWildPokemon();
+
+      Pokemon wildPokemon;
+         
+      if (currentScene.name == "Test Quentin")
+      {
+         Debug.Log("API");
+         wildPokemon = currentScene.GetComponent<MapAreaAPI>().GetRandomWildPokemon();
+      }
+      else
+      {
+         Debug.Log("normal");
+         wildPokemon = currentScene.GetComponent<MapArea>().GetRandomWildPokemon();
+      }
       
       var wildPokemonCopy = new Pokemon(wildPokemon.Base, wildPokemon.Level);
       
