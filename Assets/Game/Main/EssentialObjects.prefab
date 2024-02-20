@@ -2938,6 +2938,9 @@ MonoBehaviour:
   triggersLayer:
     serializedVersion: 2
     m_Bits: 4096
+  ledgeLayer:
+    serializedVersion: 2
+    m_Bits: 8192
 --- !u!114 &2469150927004160176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2990,6 +2993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce92a92b27a07f40b27c6ece0b038b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shopCameraOffSet: {x: 0, y: 0}
   inventoryUI: {fileID: 0}
   shopUI: {fileID: 0}
   walletUI: {fileID: 0}

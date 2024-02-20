@@ -34,6 +34,14 @@ public class Character : MonoBehaviour
         targetPos.x += moveVec.x;
         targetPos.y += moveVec.y;
         
+        var ledge = CheckForLedge(targetPos);
+        if (ledge != null)
+        {
+            if (ledge.TryToJump(this, moveVec))
+                yield break;
+        }
+            
+        
         if(!IsPathClear(targetPos))
             yield break;
         
@@ -71,7 +79,12 @@ public class Character : MonoBehaviour
         } 
         return true;
     }
-    
+
+    ledge CheckForLedge(Vector3 targetPos)
+    {
+        var collider = Physics2D.OverlapCircle(targetPos, 0.15f, GameLayers.i.LedgeLayer);
+        return collider?.GetComponent<ledge>();
+    }
     public void LookTowards(Vector3 targetPos){
         var xdiff = Mathf.Floor(targetPos.x) - Mathf.Floor(transform.position.x);
         var ydiff = Mathf.Floor(targetPos.y) - Mathf.Floor(transform.position.y);
