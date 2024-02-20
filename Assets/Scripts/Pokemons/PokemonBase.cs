@@ -48,63 +48,85 @@ public class PokemonBase : ScriptableObject
 
     public string Name{
         get { return name;}
+        set { name = value;}
     }
+    
+    
 
     public string Description{
         get { return description;}
+        set { description = value;}
     }
 
     public Sprite Sprite{
         get { return sprite;}
+        set { sprite = value;}
     }
 
     public PokemonType Type1{
         get { return type1;}
+        set { type1 = value;}
     }
 
     public PokemonType Type2{
         get { return type2;}
+        set { type2 = value;}
     }
 
     public int MaxHp{
         get { return maxHp;}
+        set { maxHp = value;}
     }
 
     public int Attack{
         get { return attack;}
+        set { attack = value;}
     }
 
     public int Defense{
         get { return defense;}
+        set { defense = value;}
     }
 
     public int SpAttack{
         get { return spAttack;}
+        set { spAttack = value;}
     }
 
     public int SpDefense{
         get { return spDefense;}
+        set { spDefense = value;}
     }
 
     public int Speed{
         get { return speed;}
+        set { speed = value;}
     }
     
     public List<LearnableMove> LearnableMoves{
         get { return learnableMoves;}
+        set { learnableMoves = value;}
     }
 
-    public List<Evolution> Evolutions => evolutions;
+    public List<Evolution> Evolutions{
+        get { return evolutions;}
+        set { evolutions = value;}
+    }
+    
+    
     public int CatchRate{
         get { return catchRate;} 
+        set { catchRate = value;}
     }
     
     public int ExpYield{
         get { return expYield;}
+        set { expYield = value;}
     }
     
     public GrowthRate GrowthRate{
         get { return growthRate;}
+        set { growthRate = value;}
     }
 }
 
@@ -117,10 +139,12 @@ public class LearnableMove
     
     public MoveBase Base{
         get { return moveBase;}
+        set { moveBase = value;}
     }
     
     public int Level{
         get { return level;}
+        set { level = value;}
     }
 }
 [System.Serializable]
