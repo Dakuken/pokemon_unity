@@ -21,17 +21,32 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScene/Route 1.unity
     guid: adfb10f296dd49a449c86b1da8d306af
   - enabled: 1
-    path: Assets/Scenes/GameScene/route 2.unity
+    path: Assets/Scenes/GameScene/Test Quentin.unity
+    guid: abc9acdd0ba33ca41a98e3acdbe5397c
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Route 2.unity
     guid: 8567ee41c2c15a641b5b2ea2b1c94428
   - enabled: 1
     path: Assets/Scenes/GameScene/Ville 1.unity
     guid: 3509ded8039356e4f8e6d43f9d8e5fe5
   - enabled: 1
-    path: Assets/Scenes/GameScene/route 3.unity
+    path: Assets/Scenes/GameScene/Centre Pokemon.unity
+    guid: 3244848ea45fdeb4b9bede7fbab2d458
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Shop ville 1.unity
+    guid: 50249a47a3ac40a4284c02f9811de8f8
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Route 3.unity
     guid: 9755c5c4925cc324c8e65736d04ee014
   - enabled: 1
     path: Assets/Scenes/GameScene/Ville premiere arene.unity
     guid: 71c93ae420ea6c442bb1bf7c3a8c0388
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Centre Pokemon ville 2.unity
+    guid: c94831cc44e382c4581982e422435ff4
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Shop ville 2.unity
+    guid: 9219f1c7f7ffb6441a635a95a8e151a9
   - enabled: 1
     path: "Assets/Scenes/GameScene/Ar\xE8ne 1.unity"
     guid: 5d6b07d68c3ea7f42bcc933c05138f2d
@@ -45,10 +60,16 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScene/Ville deuxieme arene.unity
     guid: b1913e4937dd10f44801bc571e764e59
   - enabled: 1
+    path: Assets/Scenes/GameScene/Centre Pokemon ville 3.unity
+    guid: 9e3e6f57cc6df1d4baa8f1c5c14070ab
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Shop ville 3.unity
+    guid: 857a089586dfeee4ca9b91487427f430
+  - enabled: 1
     path: "Assets/Scenes/GameScene/Ar\xE8ne 2.unity"
     guid: 5efe98af0c6a926409bb49704d82e570
   - enabled: 1
-    path: Assets/Scenes/GameScene/route victoire.unity
+    path: Assets/Scenes/GameScene/Route victoire.unity
     guid: 9f376071fce35864b9ae90708e3f494a
   - enabled: 1
     path: Assets/Scenes/GameScene/pre Ligue.unity
