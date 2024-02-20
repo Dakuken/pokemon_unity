@@ -6,8 +6,7 @@ using MiniJSON;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
-using UnityEngine.UIElements;
-using Object = UnityEngine.Object;
+using UnityEngine.SceneManagement;
 
 public class LoginMenu : MonoBehaviour
 {
@@ -16,6 +15,7 @@ public class LoginMenu : MonoBehaviour
     public TextMeshProUGUI errorMessageText;
 
     private List<PokemonBase> pokemonList = new List<PokemonBase>();
+    private bool connexionReussie = false;
     
     public void SeConnecter()
     {
@@ -23,7 +23,18 @@ public class LoginMenu : MonoBehaviour
         string password = passwordInputField.text;
         errorMessageText.text = "";
 
-        StartCoroutine(ConnexionAPI(email, password));
+        StartCoroutine(ConnexionEtChargementScene(email, password));
+    }
+    
+    
+    IEnumerator ConnexionEtChargementScene(string email, string password)
+    {
+        yield return StartCoroutine(ConnexionAPI(email, password));
+        
+        if (connexionReussie)
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 
     IEnumerator ConnexionAPI(string email, string password)
@@ -50,6 +61,7 @@ public class LoginMenu : MonoBehaviour
                 {
                     string token = response["token"].ToString();
                     Debug.Log("Connexion réussie.");
+                    connexionReussie = true;
                     StartCoroutine(FetchPokemon(token));
                 }
                 else if (response.ContainsKey("message"))
@@ -57,6 +69,7 @@ public class LoginMenu : MonoBehaviour
                     string errorMessage = response["message"].ToString();
                     Debug.LogError("Échec de la connexion : " + errorMessage);
                     errorMessageText.text = errorMessage;
+                    connexionReussie = false;
                 }
                 else
                 {
