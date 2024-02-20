@@ -15674,6 +15674,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Potion
       objectReference: {fileID: 0}
+    - target: {fileID: 4755843915732162136, guid: 485ac9e47389f654facf798f00074f6d, type: 3}
+      propertyPath: uniqueId
+      value: 672d89c4-229f-46c5-930d-5bac82b589fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

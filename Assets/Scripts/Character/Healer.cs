@@ -9,7 +9,8 @@ public class Healer : MonoBehaviour
         int SelectedChoice = 0;
         
         yield return DialogManager.Instance.ShowDialogText("Voulez-vous que je soigne vos pokemon ?",
-            choices : new List<string>() {"Oui, merci " ,"Non merci"}, onChoiceSelected:(choiceIndex) => SelectedChoice = choiceIndex);
+            choices : new List<string>() {"Oui, merci " ,"Non merci"},
+            onChoiceSelected:(choiceIndex) => SelectedChoice = choiceIndex);
 
         if (SelectedChoice == 0)
         {

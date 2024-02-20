@@ -16,3 +16,6 @@ MonoBehaviour:
   description: "Un objet pareil \xE0 une capsule, qui capture les Pok\xE9mon sauvages.
     Il suffit pour cela de le jeter comme une balle."
   icon: {fileID: -6885498132332409789, guid: f64ca9a0e50d2214aa7054deb58e16bc, type: 3}
+  price: 10
+  isSellable: 1
+  catchRate: 1

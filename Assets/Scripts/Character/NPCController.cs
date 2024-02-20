@@ -45,7 +45,7 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
             if (questToComplete != null)
             {
                 var quest = new Quest(questToComplete);
-                yield return quest.CompleteQuest(initiator);
+                yield return quest.CompleteQuest();
                 questToComplete = null;
 
                 Debug.Log($"{quest.Base.Name} accomplit");
@@ -66,7 +66,7 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
                 
                 if (activeQuest.CanBeCompleted())
                 {
-                    yield return activeQuest.CompleteQuest(initiator);
+                    yield return activeQuest.CompleteQuest();
                     activeQuest = null;
                 }
             }
@@ -74,7 +74,7 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
             {
                 if (activeQuest.CanBeCompleted())
                 {
-                    yield return activeQuest.CompleteQuest(initiator);
+                    yield return activeQuest.CompleteQuest();
                     activeQuest = null;
                 }
                 else

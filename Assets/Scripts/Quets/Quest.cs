@@ -30,8 +30,7 @@ public class Quest
     
 
     public IEnumerator StartQuest()
-    {
-        Status = QuestStatus.Started;
+    { Status = QuestStatus.Started;
 
        yield return DialogManager.Instance.ShowDialog(Base.StartDialogue);
 
@@ -39,7 +38,7 @@ public class Quest
        questList.AddQuest(this);
     }
 
-    public IEnumerator CompleteQuest(Transform player)
+    public IEnumerator CompleteQuest()
     {
         Status = QuestStatus.Completed;
 
@@ -66,7 +65,7 @@ public class Quest
         var inventory = Inventory.GetInventory();
         if (Base.RequiredItem != null)
         {
-            if (!inventory.HasItem(Base.RewardItem))
+            if (!inventory.HasItem(Base.RequiredItem))
                 return false;
         }
 

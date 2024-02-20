@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c97c81f4b56772c42b6b8568ff032853, type: 3}
-  m_Name: PotionMax
+  m_Name: MaxPP
   m_EditorClassIdentifier: 
-  itemName: Potion Max
-  description: "Un spray qui soigne les blessures. Restaure tous les PV d'un Pok\xE9mon."
-  icon: {fileID: 21300000, guid: 6504b3469b30e9b459ddbee674c6a105, type: 3}
-  price: 30
+  itemName: Max PP
+  description: "Restaure enti\xE8rement les PP d'un pokemon"
+  icon: {fileID: 138371035, guid: 3ae12697ae504414bbf0797ea36dfddd, type: 3}
+  price: 25
   isSellable: 1
   hpAmount: 0
-  restoreMaxHP: 1
+  restoreMaxHP: 0
   ppAmount: 0
-  restoreMaxPP: 0
+  restoreMaxPP: 1
   status: 0
   recoverAllStatus: 0
   revive: 0

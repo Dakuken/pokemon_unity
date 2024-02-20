@@ -28,11 +28,13 @@ public class InventoryUI : MonoBehaviour
     
     InventoryUIState state;
     
-    RectTransform itemListRectTransform;
+    
     
     List<ItemSlotUI> slotUIList;
     
     const int itemsInView = 8;
+    
+    RectTransform itemListRectTransform;
     
     private void Awake()
     {
@@ -101,7 +103,7 @@ public class InventoryUI : MonoBehaviour
                 UpdateItemSelection();
 
             if (Input.GetKeyDown(KeyCode.Z))
-                ItemSelected();
+                StartCoroutine(ItemSelected());
             else if (Input.GetKeyDown(KeyCode.X))
             {
                 onBack?.Invoke();
@@ -120,8 +122,35 @@ public class InventoryUI : MonoBehaviour
         }
     }
 
-    void ItemSelected()
+    IEnumerator ItemSelected()
     {
+        state = InventoryUIState.Busy;
+        var item = inventory.GetItem(selectedItem, selectedCategory);
+         if (GameController.Instance.State == GameState.Shop)
+        {
+            onItemUsed?.Invoke(item);
+            state = InventoryUIState.ItemSelection;
+            yield break;
+        }
+        
+        if (GameController.Instance.State == GameState.Battle)
+        {
+            if(!item.CanUseInBattle)
+            {
+                yield return DialogManager.Instance.ShowDialogText($"Cette item ne peut pas être utilisé en combat");
+                state = InventoryUIState.ItemSelection;
+                yield break;
+            }
+        }
+        else
+        {
+            if(!item.CanUseOutSideBattle)
+            {
+                yield return DialogManager.Instance.ShowDialogText($"Cette item ne peut pas être utilisé en dehors des combat");
+                state = InventoryUIState.ItemSelection;
+                yield break;
+            }
+        }
         if (selectedCategory == (int)ItemCategory.Pokeballs)
         {
             StartCoroutine(UseItem());
@@ -147,7 +176,7 @@ public class InventoryUI : MonoBehaviour
         else
         {
             if(selectedCategory == (int)ItemCategory.Items)
-            yield return DialogManager.Instance.ShowDialogText($"It won't have any effect");
+                yield return DialogManager.Instance.ShowDialogText($"It won't have any effect");
         }
         
         ClosePartyScreen();
@@ -156,9 +185,7 @@ public class InventoryUI : MonoBehaviour
     void UpdateItemSelection()
     {
         var slots = inventory.GetSlotsByCategory(selectedCategory);
-        
-        selectedItem = Mathf.Clamp(selectedItem, 0, slots.Count - 1);
-        
+       
         for (int i = 0; i < slotUIList.Count; ++i)
         {
             if (i == selectedItem)
@@ -166,8 +193,7 @@ public class InventoryUI : MonoBehaviour
             else
                 slotUIList[i].NameText.color = Color.black;
         }
-        
-
+        selectedItem = Mathf.Clamp(selectedItem, 0, slots.Count - 1);
         if (slots.Count > 0)
         {
             var item = slots[selectedItem].Item;

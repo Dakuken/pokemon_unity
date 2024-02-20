@@ -39,12 +39,15 @@ public class Inventory : MonoBehaviour, ISavable
     {
         return allSlots[category];
     }
-    
+
+    public ItemBase GetItem(int itemIndex, int categoryIndex)
+    {
+        var currentSlots = GetSlotsByCategory(categoryIndex);
+        return currentSlots[itemIndex].Item;
+    }
     public ItemBase UseItem(int indexItem, Pokemon selectedPokemon, int selectedCategory)
     {
-        var currentSlots = GetSlotsByCategory(selectedCategory);
-        
-        var item = currentSlots[indexItem].Item;
+        var item = GetItem(indexItem, selectedCategory);
         bool itemUsed = item.Use(selectedPokemon);
         if (itemUsed)
         {
@@ -55,6 +58,9 @@ public class Inventory : MonoBehaviour, ISavable
         return null;
     }
 
+    
+   
+    
     public void AddItem(ItemBase item, int count=1)
     {
       int category = (int)GetCategoryFromItem(item);
@@ -75,13 +81,26 @@ public class Inventory : MonoBehaviour, ISavable
       }
       OnUpdated?.Invoke();
     }
-    public void RemoveItem(ItemBase item)
+    public int GetItemCount(ItemBase item)
+    {
+        int category = (int)GetCategoryFromItem(item);
+        var currentSlots = GetSlotsByCategory(category);
+
+        var itemSlot = currentSlots.FirstOrDefault(slot => slot.Item == item);
+
+        if (itemSlot != null)
+            return itemSlot.Count;
+        else
+            return 0;
+
+    }
+    public void RemoveItem(ItemBase item, int count = 1)
     {
         int category = (int)GetCategoryFromItem(item);
         var currentSlots = GetSlotsByCategory(category);
         
-        var itemslot = currentSlots.First(x => x.Item == item);
-        itemslot.Count--;
+        var itemslot = currentSlots.First(slot => slot.Item == item);
+        itemslot.Count -= count;
         if(itemslot.Count == 0)
             currentSlots.Remove(itemslot);
         

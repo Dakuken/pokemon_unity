@@ -23,13 +23,10 @@ public class RecoveryItem : ItemBase
 
     public override bool Use(Pokemon pokemon)
     {
-        //revive
         if(revive || maxRevive)
         {
-            if(pokemon.HP > 0)
+            if (pokemon.HP > 0)
                 return false;
-
-
             if (revive)
                 pokemon.IncreaseHp(pokemon.MaxHp / 2);
             else if (maxRevive)
@@ -42,7 +39,6 @@ public class RecoveryItem : ItemBase
         if(pokemon.HP == 0)
             return false;
         
-        //HP
         if (restoreMaxHP || hpAmount > 0)
         {
             if(pokemon.HP == pokemon.MaxHp)
@@ -52,19 +48,17 @@ public class RecoveryItem : ItemBase
                 pokemon.IncreaseHp(pokemon.MaxHp);
             else
                 pokemon.IncreaseHp(hpAmount);
-     
         }
         
-        //status
         if (recoverAllStatus || status != ConditionID.none)
         {
-           if (pokemon.Status == null && pokemon.VolatileStatus == null)
+           if (pokemon.Status == null && pokemon.VolatileStatus != null)
                return false;
 
            if (recoverAllStatus)
            {
                pokemon.CureStatus();
-                pokemon.CureVolatileStatus();
+               pokemon.CureVolatileStatus();
            }
            else
            {
@@ -77,14 +71,13 @@ public class RecoveryItem : ItemBase
            }
         }
         
-        //PP
-        if (restoreMaxHP)
+        if (restoreMaxPP)
         {
-            pokemon.Moves.ForEach(m => m.PP = m.Base.PP);
+            pokemon.Moves.ForEach(m => m.IncreasePP(m.Base.PP));
         }
         else if (ppAmount > 0)
         { 
-            pokemon.Moves.ForEach(m => m.PP = m.Base.PP);
+            pokemon.Moves.ForEach(m => m.IncreasePP(ppAmount));
         }
         
         return true;

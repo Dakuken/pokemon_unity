@@ -50,11 +50,17 @@ public class GameController : MonoBehaviour
    {
       battleSystem.OnBattleOver += EndBattle;
       partyScreen.Init();
-      DialogManager.Instance.OnShowDialog += () => state = GameState.Dialog;
+      
+      DialogManager.Instance.OnShowDialog += () =>
+      {
+         stateBeforePause = state;
+         state = GameState.Dialog;
+      };
+      
       DialogManager.Instance.OnCloseDialog += () =>
       {
          if(state == GameState.Dialog)
-            state = GameState.FreeRoam;
+            state = stateBeforePause;
       };
       
       menuController.onBack += () =>
@@ -72,6 +78,7 @@ public class GameController : MonoBehaviour
       };
       EvolutionManager.i.OnCompleteEvolution += () =>
       {
+         partyScreen.SetPartyData();
          state = stateBeforePause;
       };
 
@@ -235,9 +242,18 @@ public class GameController : MonoBehaviour
          SavingSystem.i.Load("saveSlot1");
          state = GameState.FreeRoam;
       }
+   }
+
+   public IEnumerator MoveCamera(Vector2 moveOffSet, bool waitForFadeOut = false)
+   {
+      yield return Fader.i.FadeIn(0.5f);
       
-      
-      
+      worldCamera.transform.position += new Vector3(moveOffSet.x, moveOffSet.y);
+
+      if (waitForFadeOut)
+         yield return Fader.i.FadeIn(0.5f);
+      else
+         StartCoroutine(Fader.i.FadeOut(0.5f));
    }
 }
    

@@ -21,7 +21,15 @@ public class ItemSlotUI : MonoBehaviour
     public float Height => rectTransform.rect.height;
     
     public void SetData(ItemSlot itemSlot){
+        rectTransform = GetComponent<RectTransform>();
         nameText.text = itemSlot.Item.ItemName;
         countText.text = "x" + itemSlot.Count;
+    }
+
+    public void SetNameAndPrice(ItemBase item)
+    {
+        rectTransform = GetComponent<RectTransform>();
+        nameText.text = item.name;
+        countText.text = $"X {item.Price}";
     }
 }

@@ -10,20 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0146fd72fb1a6540b839c8f2e1ee606, type: 3}
-  m_Name: FaintedPokemon
+  m_Name: SuperPotion
   m_EditorClassIdentifier: 
-  name: "Pokemon bless\xE9"
+  name: SuperPotion
   description: 
   startDialogue:
     lines:
-    - "Mon pokemon est bless\xE9"
-    - "Peut tu me donn\xE9 une superPotion ? "
+    - J'ai besoin d'une super potion
   inProgressDialogue:
     lines:
-    - S'il te plait une Super potion
+    - Une superPotion !!!
   completedDialogue:
     lines:
-    - Oh merci beaucoup !
-    - "Tiens en \xE9change !"
-  requiredItem: {fileID: 11400000, guid: fb00908937733f444bb79dfb747372b4, type: 2}
-  rewardItem: {fileID: 11400000, guid: 930dd3cf23a883b46a794015d7bdf72e, type: 2}
+    - Merci beaucoup
+  requiredItem: {fileID: 11400000, guid: 748d1725fc8b5a541955bcd5625275c0, type: 2}
+  rewardItem: {fileID: 11400000, guid: fb00908937733f444bb79dfb747372b4, type: 2}

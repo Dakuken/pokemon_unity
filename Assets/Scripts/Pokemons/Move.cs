@@ -27,7 +27,7 @@ public class Move
    }
    
    public void IncreasePP(int ppAmount){
-       PP += Mathf.Clamp(PP + ppAmount, 0, Base.PP);
+       PP = Mathf.Clamp(PP + ppAmount, 0, Base.PP);
    }
 }
 
