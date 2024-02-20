@@ -12,14 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c97c81f4b56772c42b6b8568ff032853, type: 3}
   m_Name: Rappel
   m_EditorClassIdentifier: 
-  itemName: 
-  description: 
-  icon: {fileID: 0}
+  itemName: Rappel
+  description: restaure une pokemon avec peu d'hp
+  icon: {fileID: -1137392998, guid: 3ae12697ae504414bbf0797ea36dfddd, type: 3}
+  price: 15
+  isSellable: 1
   hpAmount: 0
   restoreMaxHP: 0
   ppAmount: 0
   restoreMaxPP: 0
   status: 0
   recoverAllStatus: 0
-  revive: 0
+  revive: 1
   maxRevive: 0

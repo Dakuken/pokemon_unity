@@ -15,6 +15,8 @@ MonoBehaviour:
   itemName: Potion Max
   description: "Un spray qui soigne les blessures. Restaure tous les PV d'un Pok\xE9mon."
   icon: {fileID: 21300000, guid: 6504b3469b30e9b459ddbee674c6a105, type: 3}
+  price: 30
+  isSellable: 1
   hpAmount: 0
   restoreMaxHP: 1
   ppAmount: 0

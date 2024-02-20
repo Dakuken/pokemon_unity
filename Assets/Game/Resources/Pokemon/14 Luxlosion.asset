@@ -23,7 +23,7 @@ MonoBehaviour:
   spAttack: 99
   spDefense: 81
   speed: 90
-  expYield: 80
+  expYield: 100
   growthRate: 0
   catchRate: 255
   learnableMoves:

@@ -71,7 +71,7 @@ public class Pokemon
     
     public Pokemon(PokemonSaveData saveData)
     {
-        _base = PokemonDB.GetPokemonByName(saveData.name);
+        _base = PokemonDB.GetObjectByName(saveData.name);
         level = saveData.level;
         Exp = saveData.exp;
         HP = saveData.HP;
@@ -91,7 +91,7 @@ public class Pokemon
     
     public PokemonSaveData GetSaveData(){
         var saveData = new PokemonSaveData(){
-            name = Base.Name,
+            name = Base.name,
             HP = HP,
             level = level,
             exp = Exp,
@@ -113,7 +113,9 @@ public class Pokemon
 
         int oldMaxHp = MaxHp;
         MaxHp = Mathf.FloorToInt((Base.MaxHp * Level) / 100f) + 10 + Level;
-        HP += MaxHp - oldMaxHp;
+        
+        if(oldMaxHp != 0)
+            HP += MaxHp - oldMaxHp;
     }
     
 
@@ -220,6 +222,17 @@ public class Pokemon
     {
         HP = MaxHp;
         OnHpChanged?.Invoke();
+        
+        CureStatus();
+    }
+    
+    public float GetNormalizedExp()
+    {
+        int currentLevelExp = Base.GetExpForLevel(Level);
+        int nextLevelExp = Base.GetExpForLevel(Level + 1);
+        
+        float normalizedExp = (float)(Exp - currentLevelExp) / (nextLevelExp - currentLevelExp);
+        return Mathf.Clamp01(normalizedExp);
     }
     public int Attack{
         get { return GetStat(Stat.Attack);}
