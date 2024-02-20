@@ -439,24 +439,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: af0ad5b1af18e9b4fb6780373c28c7b1, type: 2}
-    level: 27
-  - _base: {fileID: 11400000, guid: 331c23b8688a3ea4695036ddf38f77d1, type: 2}
-    level: 27
-  - _base: {fileID: 11400000, guid: 76315f3ca36e1424da86ccc345d4dfef, type: 2}
-    level: 27
-  - _base: {fileID: 11400000, guid: d8c087ccc11f47744b39d1c712c9f605, type: 2}
-    level: 27
-  - _base: {fileID: 11400000, guid: 2b1d4e2b6ea71094e9e362b5438110e9, type: 2}
-    level: 25
-  - _base: {fileID: 11400000, guid: 69e1bdddea0eb864eb6d53e234cee3d7, type: 2}
-    level: 26
-  - _base: {fileID: 11400000, guid: 951de876b9582854ea01d078a1262fab, type: 2}
-    level: 26
-  - _base: {fileID: 11400000, guid: fea88a80371fe3c4899ca64af6f07866, type: 2}
-    level: 28
-  - _base: {fileID: 11400000, guid: 2e43d3300c8fdfd409d5f963c1e2fe08, type: 2}
-    level: 28
+  - pokemon: {fileID: 11400000, guid: af0ad5b1af18e9b4fb6780373c28c7b1, type: 2}
+    levelRange: {x: 20, y: 30}
+    chancePercentage: 10
+  - pokemon: {fileID: 11400000, guid: 331c23b8688a3ea4695036ddf38f77d1, type: 2}
+    levelRange: {x: 20, y: 30}
+    chancePercentage: 10
+  - pokemon: {fileID: 11400000, guid: 76315f3ca36e1424da86ccc345d4dfef, type: 2}
+    levelRange: {x: 20, y: 30}
+    chancePercentage: 10
+  - pokemon: {fileID: 11400000, guid: 76315f3ca36e1424da86ccc345d4dfef, type: 2}
+    levelRange: {x: 0, y: 1}
+    chancePercentage: 10
+  - pokemon: {fileID: 11400000, guid: d8c087ccc11f47744b39d1c712c9f605, type: 2}
+    levelRange: {x: 20, y: 30}
+    chancePercentage: 10
+  - pokemon: {fileID: 11400000, guid: 2b1d4e2b6ea71094e9e362b5438110e9, type: 2}
+    levelRange: {x: 20, y: 30}
+    chancePercentage: 10
+  - pokemon: {fileID: 11400000, guid: 69e1bdddea0eb864eb6d53e234cee3d7, type: 2}
+    levelRange: {x: 20, y: 30}
+    chancePercentage: 10
+  - pokemon: {fileID: 11400000, guid: 951de876b9582854ea01d078a1262fab, type: 2}
+    levelRange: {x: 20, y: 30}
+    chancePercentage: 10
+  - pokemon: {fileID: 11400000, guid: 2e43d3300c8fdfd409d5f963c1e2fe08, type: 2}
+    levelRange: {x: 20, y: 30}
+    chancePercentage: 20
 --- !u!114 &443199968 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -570,14 +579,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
 --- !u!114 &521079071 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -695,12 +708,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
-    level: 5
-  - _base: {fileID: 11400000, guid: 05420a1f22a73904596e7db8a9606ab1, type: 2}
-    level: 4
-  - _base: {fileID: 11400000, guid: 945643d5354dc6b4b98436c717b855e2, type: 2}
-    level: 3
+  - pokemon: {fileID: 11400000, guid: cca1cf5b74d93e248b4ec86fe3dc01a5, type: 2}
+    levelRange: {x: 3, y: 6}
+    chancePercentage: 30
+  - pokemon: {fileID: 11400000, guid: 05420a1f22a73904596e7db8a9606ab1, type: 2}
+    levelRange: {x: 3, y: 5}
+    chancePercentage: 30
+  - pokemon: {fileID: 11400000, guid: 945643d5354dc6b4b98436c717b855e2, type: 2}
+    levelRange: {x: 3, y: 5}
+    chancePercentage: 40
 --- !u!114 &530957922 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -814,16 +830,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: cdb22750a92176444959aadf4e9f0bf6, type: 2}
-    level: 11
-  - _base: {fileID: 11400000, guid: 90529f792adb5cf48a7d99b35d4e4830, type: 2}
-    level: 12
-  - _base: {fileID: 11400000, guid: 80b1eefbe49221e43bca5508403a4468, type: 2}
-    level: 13
-  - _base: {fileID: 11400000, guid: 10a700b70f6d23846822de2fdbc9421e, type: 2}
-    level: 13
-  - _base: {fileID: 11400000, guid: b79a5656a50258b42b03aa04a59926ef, type: 2}
-    level: 14
+  - pokemon: {fileID: 11400000, guid: cdb22750a92176444959aadf4e9f0bf6, type: 2}
+    levelRange: {x: 10, y: 15}
+    chancePercentage: 20
+  - pokemon: {fileID: 11400000, guid: 90529f792adb5cf48a7d99b35d4e4830, type: 2}
+    levelRange: {x: 10, y: 15}
+    chancePercentage: 20
+  - pokemon: {fileID: 11400000, guid: 80b1eefbe49221e43bca5508403a4468, type: 2}
+    levelRange: {x: 10, y: 15}
+    chancePercentage: 20
+  - pokemon: {fileID: 11400000, guid: 10a700b70f6d23846822de2fdbc9421e, type: 2}
+    levelRange: {x: 10, y: 15}
+    chancePercentage: 20
+  - pokemon: {fileID: 11400000, guid: b79a5656a50258b42b03aa04a59926ef, type: 2}
+    levelRange: {x: 10, y: 15}
+    chancePercentage: 20
 --- !u!114 &661232190 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -1846,6 +1867,10 @@ PrefabInstance:
     - target: {fileID: 3660378238924379452, guid: b0d32364e2b8d164a8a0d0ae5a72093a, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3769821663567949791, guid: b0d32364e2b8d164a8a0d0ae5a72093a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 127.21338
       objectReference: {fileID: 0}
     - target: {fileID: 3779040317839152527, guid: b0d32364e2b8d164a8a0d0ae5a72093a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3287,6 +3312,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8448714695937307195, guid: b0d32364e2b8d164a8a0d0ae5a72093a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 58.58008
+      objectReference: {fileID: 0}
     - target: {fileID: 8506460311856656512, guid: b0d32364e2b8d164a8a0d0ae5a72093a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3690,8 +3719,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: 57273a2171d014240a6ac049b1fbf808, type: 2}
-    level: 29
+  - pokemon: {fileID: 11400000, guid: 57273a2171d014240a6ac049b1fbf808, type: 2}
+    levelRange: {x: 30, y: 35}
+    chancePercentage: 100
 --- !u!114 &693576393 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -3805,12 +3835,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: 59649c3145b193142bbeccc716e41aff, type: 2}
-    level: 20
-  - _base: {fileID: 11400000, guid: 4de1934a0c7381e48b86d4caed1ed61c, type: 2}
-    level: 20
-  - _base: {fileID: 11400000, guid: 39fd02367ae270a4a89175daa1b8b7cd, type: 2}
-    level: 20
+  - pokemon: {fileID: 11400000, guid: 59649c3145b193142bbeccc716e41aff, type: 2}
+    levelRange: {x: 15, y: 25}
+    chancePercentage: 30
+  - pokemon: {fileID: 11400000, guid: 4de1934a0c7381e48b86d4caed1ed61c, type: 2}
+    levelRange: {x: 15, y: 25}
+    chancePercentage: 30
+  - pokemon: {fileID: 11400000, guid: 39fd02367ae270a4a89175daa1b8b7cd, type: 2}
+    levelRange: {x: 15, y: 25}
+    chancePercentage: 60
 --- !u!114 &734792692 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -3953,14 +3986,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
 --- !u!114 &865274611 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -4191,18 +4228,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: faa59e0b9e9989c4b86e06c1b86cbc32, type: 2}
-    level: 20
-  - _base: {fileID: 11400000, guid: eb5db07396972e144b4c2930c970b729, type: 2}
-    level: 20
-  - _base: {fileID: 11400000, guid: 9a7770c832d10cd49a0d160ac9fb2ba5, type: 2}
-    level: 20
-  - _base: {fileID: 11400000, guid: bff0ea9c23674b6449b7d7e51162a3eb, type: 2}
-    level: 16
-  - _base: {fileID: 11400000, guid: b2faaed855b3cec40902586a61782dbc, type: 2}
-    level: 16
-  - _base: {fileID: 11400000, guid: 10a700b70f6d23846822de2fdbc9421e, type: 2}
-    level: 16
+  - pokemon: {fileID: 11400000, guid: faa59e0b9e9989c4b86e06c1b86cbc32, type: 2}
+    levelRange: {x: 15, y: 25}
+    chancePercentage: 20
+  - pokemon: {fileID: 11400000, guid: eb5db07396972e144b4c2930c970b729, type: 2}
+    levelRange: {x: 15, y: 25}
+    chancePercentage: 20
+  - pokemon: {fileID: 11400000, guid: 9a7770c832d10cd49a0d160ac9fb2ba5, type: 2}
+    levelRange: {x: 15, y: 25}
+    chancePercentage: 20
+  - pokemon: {fileID: 11400000, guid: bff0ea9c23674b6449b7d7e51162a3eb, type: 2}
+    levelRange: {x: 15, y: 25}
+    chancePercentage: 20
+  - pokemon: {fileID: 11400000, guid: b2faaed855b3cec40902586a61782dbc, type: 2}
+    levelRange: {x: 15, y: 25}
+    chancePercentage: 10
+  - pokemon: {fileID: 11400000, guid: 10a700b70f6d23846822de2fdbc9421e, type: 2}
+    levelRange: {x: 15, y: 25}
+    chancePercentage: 10
 --- !u!114 &1170237565 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -4416,14 +4459,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: 945643d5354dc6b4b98436c717b855e2, type: 2}
-    level: 7
-  - _base: {fileID: 11400000, guid: 05420a1f22a73904596e7db8a9606ab1, type: 2}
-    level: 8
-  - _base: {fileID: 11400000, guid: 80b1eefbe49221e43bca5508403a4468, type: 2}
-    level: 9
-  - _base: {fileID: 11400000, guid: 07f9c872d14c30645aa122cb9d93d715, type: 2}
-    level: 10
+  - pokemon: {fileID: 11400000, guid: 945643d5354dc6b4b98436c717b855e2, type: 2}
+    levelRange: {x: 6, y: 10}
+    chancePercentage: 40
+  - pokemon: {fileID: 11400000, guid: 05420a1f22a73904596e7db8a9606ab1, type: 2}
+    levelRange: {x: 6, y: 10}
+    chancePercentage: 20
+  - pokemon: {fileID: 11400000, guid: 80b1eefbe49221e43bca5508403a4468, type: 2}
+    levelRange: {x: 6, y: 10}
+    chancePercentage: 20
+  - pokemon: {fileID: 11400000, guid: 07f9c872d14c30645aa122cb9d93d715, type: 2}
+    levelRange: {x: 6, y: 10}
+    chancePercentage: 20
 --- !u!114 &1444169007 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -4537,14 +4584,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
 --- !u!114 &1553284518 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -4658,14 +4709,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
 --- !u!114 &1577427319 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -4783,14 +4838,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
 --- !u!114 &1602553476 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -4904,14 +4963,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
 --- !u!114 &1995419268 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
@@ -5025,14 +5088,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
-  - _base: {fileID: 0}
-    level: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
 --- !u!114 &2003437036 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8147073423315740199, guid: 3c2ec628b82093d4ca22de9c641dd4d3, type: 3}
