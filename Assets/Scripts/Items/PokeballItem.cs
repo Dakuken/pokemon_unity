@@ -16,6 +16,6 @@ public class PokeballItem : ItemBase
     }
 
     public override bool CanUseOutSideBattle => false;
-    public float CatchRate { get => catchRate; }
-   
+    public float CatchRate => catchRate;
+
 }

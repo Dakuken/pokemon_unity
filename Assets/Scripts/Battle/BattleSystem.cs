@@ -488,11 +488,12 @@ public class BattleSystem : MonoBehaviour
                 inventoryUI.gameObject.SetActive(false);
                 state = BattleState.ActionSelection;
             };
-            
+
             Action<ItemBase> onItemUsed = (ItemBase usedItem) =>
             {
                 StartCoroutine(OnItemUsed(usedItem));
             };
+            
             
             inventoryUI.HandleUpdate(onBack,onItemUsed);
         }
@@ -522,7 +523,6 @@ public class BattleSystem : MonoBehaviour
             
             moveSelectionUI.HandleMoveSelection(onMoveSelected);
         }
-        
     }
 
     void HandleActionSelection() {
