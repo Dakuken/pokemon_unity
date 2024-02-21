@@ -32,7 +32,7 @@ public class LoginMenu : MonoBehaviour
         
         if (connexionReussie)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 
