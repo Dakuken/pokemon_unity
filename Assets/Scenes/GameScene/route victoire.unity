@@ -5795,6 +5795,7 @@ MonoBehaviour:
     - C'est ciao comme disais l'autre
   exclamation: {fileID: 853976250}
   fov: {fileID: 162317312}
+  trainerEncounterMusic: {fileID: 0}
 --- !u!114 &339244285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6522,6 +6523,7 @@ MonoBehaviour:
     - C'est ciao comme disais l'autre
   exclamation: {fileID: 330545270}
   fov: {fileID: 99906386}
+  trainerEncounterMusic: {fileID: 0}
 --- !u!114 &552310320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6773,6 +6775,7 @@ MonoBehaviour:
     - C'est ciao comme disais l'autre
   exclamation: {fileID: 1257144985}
   fov: {fileID: 424797921}
+  trainerEncounterMusic: {fileID: 0}
 --- !u!114 &654731080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7107,6 +7110,7 @@ MonoBehaviour:
     - C'est ciao comme disais l'autre
   exclamation: {fileID: 1542960803}
   fov: {fileID: 1040521856}
+  trainerEncounterMusic: {fileID: 0}
 --- !u!114 &1034093356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24065,63 +24069,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1001 &1867578963
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4676420497677610705, guid: ba1ee259880ad3a499cd638553018989, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676420497677610705, guid: ba1ee259880ad3a499cd638553018989, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676420497677610705, guid: ba1ee259880ad3a499cd638553018989, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676420497677610705, guid: ba1ee259880ad3a499cd638553018989, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676420497677610705, guid: ba1ee259880ad3a499cd638553018989, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676420497677610705, guid: ba1ee259880ad3a499cd638553018989, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676420497677610705, guid: ba1ee259880ad3a499cd638553018989, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676420497677610705, guid: ba1ee259880ad3a499cd638553018989, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676420497677610705, guid: ba1ee259880ad3a499cd638553018989, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676420497677610705, guid: ba1ee259880ad3a499cd638553018989, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4806515011295833466, guid: ba1ee259880ad3a499cd638553018989, type: 3}
-      propertyPath: m_Name
-      value: EssentialObjectsLoader
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ba1ee259880ad3a499cd638553018989, type: 3}
 --- !u!1 &1991137594
 GameObject:
   m_ObjectHideFlags: 0
@@ -24153,14 +24100,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: 80b1eefbe49221e43bca5508403a4468, type: 2}
-    level: 12
-  - _base: {fileID: 11400000, guid: 07f9c872d14c30645aa122cb9d93d715, type: 2}
-    level: 12
-  - _base: {fileID: 11400000, guid: bff0ea9c23674b6449b7d7e51162a3eb, type: 2}
-    level: 15
-  - _base: {fileID: 11400000, guid: b1b66271bc7f395498cddd269d948580, type: 2}
-    level: 14
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
 --- !u!156049354 &1991137596
 Grid:
   m_ObjectHideFlags: 0
@@ -24201,4 +24152,3 @@ SceneRoots:
   - {fileID: 552310325}
   - {fileID: 654731085}
   - {fileID: 1034093361}
-  - {fileID: 1867578963}
