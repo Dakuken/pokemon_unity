@@ -1937,8 +1937,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemonToGive:
-    _base: {fileID: 11400000, guid: a36ed8e0b736c864f83c9a005b450703, type: 2}
-    level: 100
+    _base: {fileID: 11400000, guid: ca571054db681dc4482b57b24471e6da, type: 2}
+    level: 5
   dialog:
     lines:
     - Tiens prend ce pokemon
@@ -1956,14 +1956,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: fc1bee438957ce34db5a9504213978af, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 6185847f8078fd840a6f926847740162, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: ffeab3a5486de9046b0d2dca74012b90, type: 2}
-    level: 10
-  - _base: {fileID: 11400000, guid: 227dcf9b967ab2d47ba28c4400361013, type: 2}
-    level: 10
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
 --- !u!4 &813361047305143360
 Transform:
   m_ObjectHideFlags: 0
