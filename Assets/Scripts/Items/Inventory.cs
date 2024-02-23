@@ -142,7 +142,7 @@ public class Inventory : MonoBehaviour, ISavable
         var saveData = state as InventorySaveData;
 
         slots = saveData.items.Select(i => new ItemSlot(i)).ToList();
-        pokeballSlots = saveData.items.Select(i => new ItemSlot(i)).ToList();
+        pokeballSlots = saveData.pokeballs.Select(i => new ItemSlot(i)).ToList();
         
         
         allSlots = new List<List<ItemSlot>>()
