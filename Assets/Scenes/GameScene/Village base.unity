@@ -19498,6 +19498,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quete
       objectReference: {fileID: 0}
+    - target: {fileID: 6057267975597553551, guid: d2a1276844b36a24ca82316878134776, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -955786142, guid: eb263a4aaa040864facbc5fbfcfca607, type: 3}
     - target: {fileID: 7995216781063493900, guid: d2a1276844b36a24ca82316878134776, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.99
